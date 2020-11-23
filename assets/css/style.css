@@ -1,19 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
 
 @font-face {
-    font-family: "Century Gothic";
-    /*a name to be used later*/
-    src: url("../fonts/Century\ Gothic/GOTHIC.TTF");
-    /*URL to font*/
-    font-weight: normal;
-    font-display: "swap";
+  font-family: "Century Gothic";
+  /*a name to be used later*/
+  src: url("../fonts/Century\ Gothic/GOTHIC.TTF");
+  /*URL to font*/
+  font-weight: normal;
+  font-display: "swap";
 }
 
 @font-face {
-    font-family: "Century Gothic";
-    /*a name to be used later*/
-    src: url("../fonts/Century\ Gothic/gothicb.ttf");
-    /*URL to font*/
-    font-weight: bold;
-    font-display: "swap";
+  font-family: "Century Gothic";
+  /*a name to be used later*/
+  src: url("../fonts/Century\ Gothic/gothicb.ttf");
+  /*URL to font*/
+  font-weight: bold;
+  font-display: "swap";
+}
+
+:root {
+  --dark-color: #000000;
+  --primary-color: #007e3b;
+  --secondary-color: #ecc30b;
+
+  --heading-font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+  --body-font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+  --h1-font-size: min(max(56px, 6.6667vw), 96px);
+  --h2-font-size: min(max(48px, 6.25vw), 90px);
+}
+
+body {
+margin: 0;
+  color: var(--dark-color);
+}
+
+.li {
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3.24vh 6.6vw 4.167vh 6.6vw;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.13);
+}
+
+.navbar-brand {
+  width: 17.24vw;
+}
+
+.navbar-logo {
+  width: 100%;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-item {
+  padding: 0 1.875vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-family: var(--heading-font-family);
+  font-size: 0.833vw;
+  line-height: 1.1875;
+  letter-spacing: 0em;
+  text-align: left;
 }
