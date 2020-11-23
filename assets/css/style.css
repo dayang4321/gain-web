@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+@font-face {
+    font-family: "Century Gothic";
+    /*a name to be used later*/
+    src: url("../fonts/Century\ Gothic/GOTHIC.TTF");
+    /*URL to font*/
+    font-weight: normal;
+    font-display: "swap";
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    /*a name to be used later*/
+    src: url("../fonts/Century\ Gothic/gothicb.ttf");
+    /*URL to font*/
+    font-weight: bold;
+    font-display: "swap";
+}
