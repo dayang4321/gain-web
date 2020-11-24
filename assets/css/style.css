@@ -53,6 +53,10 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
 
+ul{
+    list-style: none;
+}
+
 .navbar {
     background-color: white ;
 position: fixed;
@@ -61,8 +65,9 @@ width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 3.24vh 6.6vw 4.167vh 6.6vw;
+  padding: 3.24vh 4.79vw 4.167vh 6.6vw;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.13);
+  font-family: var(--heading-font-family);
 }
 
 .navbar-brand {
@@ -77,7 +82,7 @@ width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  list-style: none;
+  font-size: 0.833vw;
 }
 
 .nav-item {
@@ -89,9 +94,47 @@ width: 100vw;
 
 .nav-item a {
   text-decoration: none;
-  font-family: var(--heading-font-family);
-  font-size: 0.833vw;
   line-height: 1.1875;
   letter-spacing: 0em;
   text-align: left;
 }
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+
+.navbar-dropdown {
+    position: relative;
+}
+  
+.dropdown-menu {
+    background: #C7C7C7;
+      padding: 0.5em 0;
+      min-width: 15ch;
+      position: absolute;
+      top: calc(100% - 0.25rem);
+      left: 50%;
+      transform: translateX(-50%);
+      transform: rotateX(-90deg) translateX(-50%);
+      transform-origin: top center;
+      opacity: 0.3;
+      transition: 280ms all ease-out;
+    }
+  
+    .dropdown-menu.show {
+        opacity: 1;
+        transform: rotateX(0) translateX(-50%);
+        visibility: visible;
+      } 
+
+      .dropdown-menu a {
+        display: block;
+        padding: 0.5em;
+      }
+
+
