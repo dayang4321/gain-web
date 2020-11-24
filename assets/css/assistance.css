@@ -1,0 +1,86 @@
+@import url("./style.css");
+
+.assistance-main {
+  padding: 12vh 13vw;
+}
+
+.assistance-title {
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.969vw;
+  line-height: 1.22;
+  width: 47%;
+  margin-bottom: 3.8vh;
+}
+
+.assistance-small-title {
+  margin-bottom: 7.4vh;
+  font-family: var(--body-font-family);
+  font-size: 1.25vw;
+}
+
+.assistance-light-title {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  font-size: 2.5vw;
+  line-height: 1.23;
+  margin: 6.85vh 0 4.35vh 0;
+}
+
+.form-row {
+  display: flex;
+}
+
+label {
+  font-family: var(--heading-font-family);
+  font-size: 1.25vw;
+  line-height: 1.16;
+  text-transform: uppercase;
+  display: block;
+}
+
+.form-group {
+  flex: 1 1 0px;
+  margin-bottom: 4.722vh;
+}
+
+.form-row > .form-group:first-of-type {
+  margin-right: 1.77vw;
+}
+.form-row > .form-group:last-of-type {
+  margin-left: 1.77vw;
+}
+
+input[type="text"],
+textarea,
+select {
+  margin-top: 2.31vh;
+  width: 100%;
+  height: 7.5vh;
+  border: 2px solid #c4c4c4;
+  border-radius: 13px;
+  font: 400 1.25vw var(--heading-font-family);
+  padding: 1.67vh 1.875vw;
+  max-width: 32.86vw;
+}
+
+textarea {
+  height: unset;
+  max-width: unset;
+}
+
+input[type="submit"] {
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5vw;
+  line-height: 1.23;
+  color: #ffffff;
+  background: #007e3b;
+  border: none;
+  padding: 1.85vh 6.72vw;
+  text-transform: uppercase;
+  float: right;
+  margin-top: 11.11vw;
+}

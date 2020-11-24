@@ -1,0 +1,48 @@
+@import url('./style.css');
+
+.maps-main{
+    padding: 17.5vh 15vw;
+    height: 87vh;
+}
+
+
+.maps-title{
+    font-family: var(--heading-font-family);
+    font-size: 1.875vw;
+    margin-bottom: 3.89vh;
+}
+
+.map-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.map-link {
+    background-color: var(--primary-color);
+   min-width: 20.98vw;
+   min-height: 37.32vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5vh 2.5vw;
+   border-radius: 13px;
+   flex: 1 1 0px;
+}
+
+.map-link:nth-of-type(2){
+    margin: 0 3.48vw;
+}
+
+.map-image{
+    width: 80%;
+    height: 80%;
+}
+
+.map-name{
+    font-family: var(--heading-font-family);
+    color: #FFFFFF;
+    border-radius: 13px;
+    font-size: 1.875vw; 
+}
