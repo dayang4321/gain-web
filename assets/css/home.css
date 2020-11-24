@@ -1,0 +1,59 @@
+/* @import url('./style.css'); */
+
+.home-main{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 13vh ;
+    flex-direction: row;
+    font-family: var(--body-font-family);
+}
+
+.home-image{
+    background-image: url(../img/homeBg.jpg);
+    min-width:42.1875vw ;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-info{
+    padding: 14vh 11vw;
+}
+
+.home-info-title{
+font-weight: bold;
+font-size: 2.969vw;
+line-height: 1.1754;
+text-align: right;
+padding-left: 2.4vw;
+margin: 0 0 4.4vh 0;
+}
+
+.home-info-text{
+font-size: min(max(14px,0.9375vw),0.9375vw);
+line-height: 1.167;
+text-align: justify;
+margin: 0 0 4.4vh 0;
+}
+
+.home-info-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-info-link{
+    font-family: var(--heading-font-family);
+font-weight: bold;
+font-size: min(max(14px,0.9375vw),0.9375vw);;
+line-height: 1.18;
+text-align: center;
+border: 3px solid var(--primary-color);
+padding: 2.083vh;
+color: var(--primary-color);
+}
+
+.home-info-link:first-of-type{
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    margin-bottom: 18px;
+}
