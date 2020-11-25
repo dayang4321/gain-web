@@ -71,16 +71,10 @@ textarea {
 }
 
 #assistanceForm input[type="submit"] {
-  font-family: var(--heading-font-family);
-  font-style: normal;
   font-weight: bold;
   font-size: 2.5vw;
-  line-height: 1.23;
-  color: #ffffff;
-  background: #007e3b;
-  border: none;
-  padding: 1.85vh 6.72vw;
-  text-transform: uppercase;
+  padding: 1.85vh 6.72vw; 
   float: right;
-  margin-top: 11.11vh;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
 }

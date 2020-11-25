@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/assistance.css" />
+    <link rel="stylesheet" href="../../assets/css/admin.css" />
+    <title>Request Assistance</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="navbar-brand">
+                <img class="navbar-logo" src="../../assets/img/svg/mainLogo.svg" alt="logo"/>
+            </div>
+
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="">TECHNICAL ASSISTANCE MAP</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">REQUEST ASSISTANCE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">BACK TO MAIN SITE</a>
+                </li>
+                <li class="nav-item navbar-dropdown">
+                    <!-- aria-expanded needs managed with Javascript -->
+                    <button type="button" class="dropbtn" aria-expanded="false" aria-controls="langDropdown">
+                      EN
+                    </button>
+                    <ul class="dropdown-menu" id="langDropdown">
+                      <li><a href="#">EN-US</a></li>
+                      <li><a href="#">FR</a></li>
+                      <li><a href="#">ES</a></li>
+                    </ul>
+                  </li>
+            </ul>
+
+        </nav>
+    </header>
+    <main class="create-user-main ">
+        <h1 class="assistance-title">Create new users</h1>
+     
+        <form id="createUserForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="userFirstName">First Name</label>
+                    <input name="userFirstName" id="userFirstName" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="userLastName">Last Name</label>
+                    <input name="userLastName" id="userLastName" type="text"/>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="userEmail">Email Address</label>
+                    <input name="userEmail" id="userEmail" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="userOrganization">Organization</label>
+                    <input name="userOrganization" id="userOrganization" type="text"/>
+                </div>
+            </div>
+
+                <div class="form-group">
+                    <label for="userType">User Type</label>
+                    <select name="userType" id="userType" type="text">
+                        <option value="1">REGULAR ADMIN</option>
+                        <option value="1">SUPER ADMIN (Can create other users)</option>
+                    </select>
+                </div>
+
+            <input type="submit" class="submit-btn" value="create"/>
+
+        </form>
+    </main>
+    
+</body>
+</html>

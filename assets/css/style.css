@@ -190,7 +190,27 @@ width: 100vw;
         padding: 1.67vh 1.875vw;
         max-width: 32.86vw;
       }
-      
+
+      input:focus,
+      select:focus,
+      textarea:focus{
+        outline: none;
+      }
+
+      select{
+        appearance: none;
+        background-image: url(../img/svg/select-arrow.svg); 
+        background-position: 95% 55%;
+        background-repeat: no-repeat ;
+        background-size: 5%;
+      }
+
+
+      option{
+          background-color:#F4F4F4;
+      }      
+        
+
       textarea {
         height: unset;
         max-width: unset;
@@ -198,7 +218,6 @@ width: 100vw;
       
       input[type="submit"] {
         font-family: var(--heading-font-family);
-        font-style: normal;
         line-height: 1.23;
         color: #ffffff;
         background: #007e3b;
