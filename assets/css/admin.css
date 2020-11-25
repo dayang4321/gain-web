@@ -1,0 +1,39 @@
+.home-image.admin-home-image{
+    background-image: url(../img/Food-Processing-Unit\ 1.jpg);
+}
+
+.navbar.admin-navbar{
+    padding: 3.24vh 7.916vw 4.167vh 6.6vw;
+}
+
+#adminLoginForm input[type="text"]{
+    max-width: unset;
+}
+
+#adminLoginForm input[type="text"]::placeholder{
+font-family: 'Century Gothic Italic', Arial, Helvetica, sans-serif;
+font-style: italic;
+font-weight: normal;
+font-size: 0.9375vw;
+line-height: 1.23;
+color: #6D6E71;
+}
+
+#adminLoginForm .form-group{
+margin-bottom:1vh ;
+}
+
+    
+#adminLoginForm input[type="submit"] {
+    font-family: var(--heading-font-family);
+    font-style: normal;
+    font-size: 0.9375vw;
+    line-height: 1.23;
+    color: #ffffff;
+    background: #007e3b;
+    border: none;
+    padding: 2.6vh 6.72vw;
+    text-transform: uppercase; 
+    width: 100%;     
+    margin-top: 2.31vh;
+  }

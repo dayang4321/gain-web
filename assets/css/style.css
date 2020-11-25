@@ -18,6 +18,16 @@
   font-display: "swap";
 }
 
+@font-face {
+  font-family: "Century Gothic Italic";
+  /*a name to be used later*/
+  src: url("../fonts/Century\ Gothic/gothici.ttf");
+  /*URL to font*/
+  font-weight: bold;
+  font-style: italic;
+  font-display: "swap";
+}
+
 :root {
   --dark-color: #000000;
   --primary-color: #007e3b;
@@ -143,3 +153,69 @@ width: 100vw;
       }
 
 
+
+      .form-row {
+        display: flex;
+      }
+      
+      label {
+        font-family: var(--heading-font-family);
+        font-size: 1.25vw;
+        line-height: 1.16;
+        text-transform: uppercase;
+        display: block;
+      }
+      
+      .form-group {
+        flex: 1 1 0px;
+        margin-bottom: 4.722vh;
+      }
+      
+      .form-row > .form-group:first-of-type {
+        margin-right: 1.77vw;
+      }
+      .form-row > .form-group:last-of-type {
+        margin-left: 1.77vw;
+      }
+      
+      input[type="text"],
+      textarea,
+      select {
+        margin-top: 2.31vh;
+        width: 100%;
+        height: 7.5vh;
+        border: 2px solid #c4c4c4;
+        border-radius: 13px;
+        font: 400 1.25vw var(--heading-font-family);
+        padding: 1.67vh 1.875vw;
+        max-width: 32.86vw;
+      }
+      
+      textarea {
+        height: unset;
+        max-width: unset;
+      }
+      
+      input[type="submit"] {
+        font-family: var(--heading-font-family);
+        font-style: normal;
+        line-height: 1.23;
+        color: #ffffff;
+        background: #007e3b;
+        border: none;
+        text-transform: uppercase;      
+      }
+      
+      
+
+      .sr-only {
+        position: absolute;
+        height: 1px;
+        width: 1px;
+        /* IE 6 and 7 */
+        clip: rect(1px 1px 1px 1px); 
+        clip: rect(1px,1px,1px,1px);
+        clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+        -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+        overflow: hidden !important;
+        }

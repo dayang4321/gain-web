@@ -70,7 +70,7 @@ textarea {
   max-width: unset;
 }
 
-input[type="submit"] {
+#assistanceForm input[type="submit"] {
   font-family: var(--heading-font-family);
   font-style: normal;
   font-weight: bold;
