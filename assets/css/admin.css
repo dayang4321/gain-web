@@ -6,11 +6,11 @@
     padding: 3.24vh 7.916vw 4.167vh 6.6vw;
 }
 
-#adminLoginForm input[type="text"]{
+#adminLoginForm input:not([type="submit"]){
     max-width: unset;
 }
 
-#adminLoginForm input[type="text"]::placeholder{
+#adminLoginForm input:not([type="submit"])::placeholder{
 font-family: 'Century Gothic Italic', Arial, Helvetica, sans-serif;
 font-style: italic;
 font-weight: normal;
@@ -32,8 +32,35 @@ margin-bottom:1vh ;
     color: #ffffff;
     background: #007e3b;
     border: none;
-    padding: 2.6vh 6.72vw;
+    padding: 2.5vh 6.72vw;
     text-transform: uppercase; 
     width: 100%;     
     margin-top: 2.31vh;
   }
+
+
+.maps-main.admin-maps-main{
+    padding: 9.259vh 15vw 0 15vw;
+}
+
+.admin-maps-intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:8.518vh ;
+}
+
+.admin-maps-welcome{
+    font-family: var(--heading-font-family);
+font-weight: bold;
+font-size:3.333vw;
+line-height: 1.219;
+}
+
+.create-user-link{
+    background-image: url(../img/svg/user-login.svg);
+    background-size: cover;
+    width: 6.041vw;
+    height: 6.041vw;
+}

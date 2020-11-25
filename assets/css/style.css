@@ -178,7 +178,7 @@ width: 100vw;
         margin-left: 1.77vw;
       }
       
-      input[type="text"],
+      input:not([type="submit"]),
       textarea,
       select {
         margin-top: 2.31vh;

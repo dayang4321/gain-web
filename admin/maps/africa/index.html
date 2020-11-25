@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/svg-arrow.css" />
+    <link rel="stylesheet" href="../../assets/css/data.css" />
+    <title>Scaling Up Nutrition</title>
+</head>
+<body tabindex="-1">
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="navbar-brand">
+                <img class="navbar-logo" src="../../assets/img/svg/mainLogo.svg" alt="logo"/>
+            </div>
+
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="">TECHNICAL ASSISTANCE MAP</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">REQUEST ASSISTANCE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">BACK TO MAIN SITE</a>
+                </li>
+                <li class="nav-item navbar-dropdown">
+                    <!-- aria-expanded needs managed with Javascript -->
+                    <button type="button" class="dropbtn" aria-expanded="false" aria-controls="langDropdown">
+                      EN
+                    </button>
+                    <ul class="dropdown-menu" id="langDropdown">
+                      <li><a href="#">EN-US</a></li>
+                      <li><a href="#">FR</a></li>
+                      <li><a href="#">ES</a></li>
+                    </ul>
+                  </li>
+            </ul>
+
+        </nav>
+    </header>
+    <main class="data-main">
+        <nav class="side-nav">
+            <ul>
+                <li class="nav-item">
+                    <a href="/maps/africa/" class="active">AFRICA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/maps/europe/" class="">LATIN AMERICA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/maps/asia/" class="">ASIA</a>
+                </li>
+            </ul>
+        </nav>
+            <div id="container"></div>
+    </main>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/mapdata/custom/africa.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/script.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="../../assets/js/africaConfig.js"></script>
+</body>
+</html>
