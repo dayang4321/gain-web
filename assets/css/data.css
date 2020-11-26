@@ -20,6 +20,10 @@ html {
   justify-content: center;
 }
 
+.admin.side-nav{
+    justify-content: flex-end;
+}
+
 .side-nav .nav-item{
     padding: 0;
 }
@@ -32,12 +36,13 @@ html {
   color: #FFFFFF;
   border: 3px solid #147F3D;
   padding: 0.75vh;
-  margin: 11px 0;
+  margin: 1.1vh 0;
   font-size: 0.807vw;
 }
 
 .side-nav ul {
     padding : 0 3.46vw;
+    margin: 0;
 }
 
 
@@ -49,18 +54,38 @@ html {
 }
 
 #container {
-    min-height: 100%;
+    max-height: 92%;
     min-width: 85vw;
     margin: 0 auto;
+    position: relative;
+     top: 1.2vh;
+
 }
 
 .highcharts-container{
-    top: 20px;
+    top: 1.85vh;
     left: 2px;
 }
 
 .highcharts-button.highcharts-contextbutton{
     display: none;
+}
+
+.highcharts-point[fill="#007E3B"]{
+    stroke: #020202;
+    stroke-width: 0.04375vw;
+    cursor: pointer;
+}
+
+.highcharts-point[fill="#007E3B"]:hover{
+   fill: #CAD023;
+   transition: all 0.2s ease-in;
+}
+
+.highcharts-point:not([fill="#007E3B"]){
+    stroke: #6D6E71;
+    stroke-width: 0.04375vw;
+    fill:#F1F2F2;
 }
 
 .country-title {
@@ -78,12 +103,12 @@ html {
 }
 
 .tippy-box {
-    background: rgba(0, 0, 0, 0.76);
+    background: rgba(0, 0, 0, 0.66);
     border-radius: 20px;  
 }
 .tippy-content{
     padding: 4vh 1.56vw 1.5vh;
-    background: rgba(0, 0, 0, 0.76);
+    background: rgba(0, 0, 0, 0.66);
     border-radius: 20px;
 }
 .popover-content{
@@ -301,3 +326,10 @@ text-align: center;
     top: 10px;
     transform: rotate(90deg);
 }
+
+.tippy-box[data-placement^=bottom]>.tippy-svg-arrow>svg {
+    transform: rotate(270deg);
+    bottom: 10px;
+}
+
+

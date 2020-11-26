@@ -4,69 +4,25 @@ let instance;
 // See API docs for 'joinBy' for more info on linking data and map.
 
 var data = [
-       ['ug', 0], //Uganda
-       ['ng', 1], //Nigeria
-    // ['st', 2],
-       ['tz', 3], //Tanzania
-       ['sl', 4], //Sierra Leone
-       ['gw', 5], //Guinea-Bissau
-    // ['cv', 6],
-    // ['sc', 7],
-    // ['tn', 8],
-       ['mg', 9], //Madagascar
-       ['ke', 10], //Kenya
-       ['cd', 11], //Democratic Republic of Congo
-    // ['fr', 12],
-       ['mr', 13], //Mauritania
-    // ['dz', 14],
-    // ['er', 15],
-    // ['gq', 16],
-    // ['mu', 17],
-       ['sn', 18], //Senegal
-       ['km', 19], //Comoros
-       ['et', 20], //Ethiopia
-       ['ci', 21], //Côte d'Ivoire
-       ['gh', 22], //Ghana
-       ['zm', 23], //Zambia
-       ['na', 24], //Namibia
-       ['rw', 25], //Rwanda
-    // ['sx', 26],
-       ['so', 27], //Somalia
-       ['cm', 28], //Cameroon
-       ['cg', 29], //Congo
-    // ['eh', 30],
-       ['bj', 31], //Benin
-       ['bf', 32], //Burkina Faso
-       ['tg', 33], //Togo
-       ['ne', 34], //Niger
-    // ['ly', 35],
-       ['lr', 36], //Liberia
-       ['mw', 37], //Malawi
-       ['gm', 38], //The Gambia
-       ['td', 39], //Chad
-       ['ga', 40], //Gabon
-    // ['dj', 41],
-       ['bi', 42], //Burundi
-    // ['ao', 43],
-       ['gn', 44], //Guinea
-       ['zw', 45], //Zimbabwe
-    // ['za', 46],
-       ['mz', 47], //Mozambique
-       ['sz', 48], //Eswatini/Swaziland
-       ['ml', 49], //Mail
-       ['bw', 50], //Botswana
-       ['sd', 51], //Sudan
-    // ['ma', 52],
-    // ['eg', 53],
-       ['ls', 54], //Lesotho
-       ['ss', 55], //South Sudan
-       ['cf', 56] //Central African Republic
+    // ['br', 0],
+    // ['ec', 1],
+    // ['ve', 2],
+    // ['cl', 3],
+    // ['ar', 4],
+    ['pe', 5], //Peru
+    // ['uy', 6],
+    // ['py', 7],
+    // ['bo', 8],
+    // ['sr', 9],
+    // ['gy', 10],
+    // ['gb', 11],
+    // ['co', 12]
 ];
 
 // Create the chart
 Highcharts.mapChart("container", {
   chart: {
-    map: "custom/africa",
+    map: "custom/south-america",
     events: {
       load: () => {
             instance = tippy('.highcharts-point[fill="#007E3B"]', {

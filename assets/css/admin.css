@@ -1,95 +1,214 @@
-.home-image.admin-home-image{
-    background-image: url(../img/Food-Processing-Unit\ 1.jpg);
+.home-image.admin-home-image {
+  background-image: url(../img/Food-Processing-Unit\ 1.jpg);
 }
 
-.navbar.admin-navbar{
-    padding: 3.24vh 7.916vw 4.167vh 6.6vw;
+.navbar.admin-navbar {
+  padding: 3.24vh 7.916vw 4.167vh 6.6vw;
 }
 
-.home-info.admin-info{
-    padding: 9vh 11vw;
+.home-info.admin-info {
+  padding: 9vh 11vw;
 }
 
-#adminLoginForm input:not([type="submit"]){
-    max-width: unset;
+#adminLoginForm input[type="text"][type="password"][type="tel"] {
+  max-width: unset;
 }
 
-#adminLoginForm input:not([type="submit"])::placeholder{
-font-family: 'Century Gothic Italic', Arial, Helvetica, sans-serif;
-font-style: italic;
-font-weight: normal;
-font-size: 0.9375vw;
-line-height: 1.23;
-color: #6D6E71;
+#adminLoginForm input[type="text"][type="password"][type="tel"]::placeholder {
+  font-family: "Century Gothic Italic", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.9375vw;
+  line-height: 1.23;
+  color: #6d6e71;
 }
 
-#adminLoginForm .form-group{
-margin-bottom:1vh ;
+#adminLoginForm .form-group {
+  margin-bottom: 1vh;
 }
 
-    
 #adminLoginForm input[type="submit"] {
-    font-family: var(--heading-font-family);
-    font-style: normal;
-    font-size: 0.9375vw;
-    line-height: 1.23;
-    color: #ffffff;
-    background: #007e3b;
-    border: none;
-    padding: 2.5vh 6.72vw;
-    text-transform: uppercase; 
-    width: 100%;     
-    margin-top: 2.31vh;
-    margin-bottom: 2.31vh;
-  }
-
-  .password-reset{
-    font-family:var(--heading-font-family);
-    font-size:  0.9375vw; 
-    text-decoration-line: underline; 
-    color: #8C8C8C;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-
-
-.maps-main.admin-maps-main{
-    padding: 9.259vh 15vw 0 15vw;
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-size: 0.9375vw;
+  line-height: 1.23;
+  color: #ffffff;
+  background: #007e3b;
+  border: none;
+  padding: 2.5vh 6.72vw;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 2.31vh;
+  margin-bottom: 2.31vh;
 }
 
-.admin-maps-intro{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom:8.518vh ;
-    margin-right: -3vw ;
+.password-reset {
+  font-family: var(--heading-font-family);
+  font-size: 0.9375vw;
+  text-decoration-line: underline;
+  color: #8c8c8c;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.admin-maps-welcome{
-    font-family: var(--heading-font-family);
-font-weight: bold;
-font-size:3.333vw;
-line-height: 1.219;
+.maps-main.admin-maps-main {
+  padding: 9.259vh 15vw 0 15vw;
 }
 
-.create-user-link{
-    background-image: url(../img/svg/user-login.svg);
-    background-size: cover;
-    width: 6.041vw;
-    height: 6.041vw;
+.admin-maps-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8.518vh;
+  margin-right: -3vw;
+}
+
+.admin-maps-welcome {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  font-size: 3.333vw;
+  line-height: 1.219;
+}
+
+.create-user-link {
+  background-image: url(../img/svg/user-login.svg);
+  background-size: cover;
+  width: 6.041vw;
+  height: 6.041vw;
 }
 
 #createUserForm input[type="submit"] {
-    font-weight: bold;
-    font-size: 2.5vw;
-    padding: 1.85vh 6.72vw;
-    float: right;
-    margin-bottom: 2vh;
-  }
+  font-weight: bold;
+  font-size: 2.5vw;
+  padding: 1.85vh 6.72vw;
+  float: right;
+  margin-bottom: 2vh;
+}
 
-  .create-user-main {
-    padding: 8vh 13vw;
-  }
-  
+.create-user-main {
+  padding: 8vh 13vw;
+}
+
+.admin-filter {
+  padding: 0 1.51vw 3vh 2.34vw;
+  margin-top: 3vh;
+}
+
+.filter-title {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  font-size: 0.9375vw;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+  color: #6d6e71;
+  margin-bottom: 1.203vh;
+  margin-left: 0.8333vw;
+}
+
+.filter-btn{
+color: #FFFFFF;
+width: 100%;
+background: #007E3B;
+border-radius: 10px;
+}
+
+
+.filter-btn,
+.reset-btn{
+font-family: var(--heading-font-family);
+font-weight: bold;
+font-size: 0.9375vw;
+line-height: 1.2;
+letter-spacing: 0.2px;
+padding: 1.2vh ;
+}
+
+.reset-btn{
+    margin: 0.9vh auto;
+    margin-left: auto;
+    color: #DEDEDE;
+    text-transform: capitalize;
+    background-color: transparent;
+    text-align: center;
+    display: block;
+}
+
+
+
+.check-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid #9c9c9c;
+  border-radius: 14px;
+  padding: 0.677vw;
+  margin-bottom: 2.5vh;
+}
+.control {
+  font-family: var(--body-font-family);
+  display: block;
+  position: relative;
+  padding-left: 1.2vw;
+  margin-bottom: 0.5vh;
+  cursor: pointer;
+  font-size: 0.73vw;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  color: #b5b5b5;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control__indicator {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 0.77vw;
+  width: 0.77vw;
+  background: transparent;
+  border: 1px solid #c4c4c4;
+}
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #cdf5e0;
+}
+.control input:checked ~ .control__indicator {
+  background: #019747;
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #007e3b;
+}
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control__indicator:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+  left: 30%;
+  top: 0%;
+  width: 0.16vw;
+  height: 0.74vh;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
