@@ -43,10 +43,10 @@ Highcharts.mapChart("container", {
           onTrigger(instance, event) {
             //  console.log(event.target)
             // ...
-            console.log(country);
+          
           },
           onUntrigger(instance, event) {
-            country = "destroyed";
+           
           },
         });
       },
