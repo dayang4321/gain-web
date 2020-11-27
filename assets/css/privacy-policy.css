@@ -9,7 +9,7 @@
   font-weight: bold;
   font-size: 2.969vw;
   line-height: 1.22;
-  margin-bottom: 10.19vh;
+  margin-bottom: 8vh;
 }
 
 .privacy-article {
@@ -23,4 +23,41 @@
 .privacy-article h6{
     font-size: inherit;
     margin: 3vh 0 2vh;
+    font-weight: 700;
 }
+
+.privacy-article p{
+  margin: 1vh 0 1vh;
+}
+
+.privacy-article ul{
+  margin-left: 2.5vw;
+  list-style: disc;
+}
+
+.privacy-article ul > li{
+  margin-bottom: 1vh;
+}
+
+.privacy-footer{
+  background-color: #E6E6E6;
+  padding: 8.24vh 14.1vw 14.81vh ;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.privacy-footer>div{
+  flex: 1 1 0px;
+  text-align: center;
+}
+
+.privacy-footer h6{
+  font-family: var(--body-font-family);
+  font-size: 1.25vw;
+  line-height: 1.167;
+  color: #7D7D7D;
+  margin-bottom: 2.6vh;
+}
+
