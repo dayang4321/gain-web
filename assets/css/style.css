@@ -259,8 +259,12 @@ width: 100vw;
   -ms-flex-align: center;
   align-items: center;
   min-height: calc(100% - (.5rem * 2));
+  margin: auto;
 }
 
+.modal-content{
+  margin: auto;
+}
 
 
 
