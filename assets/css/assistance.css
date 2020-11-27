@@ -75,5 +75,36 @@ textarea {
   padding: 1.85vh 6.72vw; 
   float: right;
   margin-top: 4vh;
-  margin-bottom: 2vh;
+  margin-bottom: 10vh;
+}
+
+.modal-dialog{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: calc(100% - (.5rem * 2));
+}
+
+
+.modal-content {
+  background: rgba(0, 0, 0, 0.76);
+  border-radius: 19px;
+  color: white;
+  font-family: var(--heading-font-family);
+  width: 30vw;
+  padding: 8vh 4.2vw;
+}
+
+.modal-title{
+font-weight: bold;
+font-size: 2.24vw;
+line-height:1.23;
+text-align: center;
+}
+
+.modal-text{
+  font-size: 1.25vw;
+line-height: 1.;
+margin: 5vh 0 4vh;
 }
