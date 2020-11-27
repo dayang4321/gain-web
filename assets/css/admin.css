@@ -253,3 +253,17 @@
   color: #8C8C8C;
   margin: 1.2vh 6.25vw; 
 }
+
+.modal-content {
+  font-family: var(--body-font-family);
+  text-align: center;
+}
+
+.modal-title{
+font-size: 1.875vw;
+margin-top: 4vh;
+}
+
+.modal-text{
+  margin: 3vh 0 0vh;
+}

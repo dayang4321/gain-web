@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../../assets/css/assistance.css" />
     <link rel="stylesheet" href="../../assets/css/admin.css" />
     <title>Request Assistance</title>
@@ -84,10 +85,35 @@
 
                 
 
-            <input type="submit" class="submit-btn" value="create"/>
+            <input type="submit" class="submit-btn" value="create" id="createSubmit"/>
 
         </form>
     </main>
-    
+    <div class="modal fade" id="successMsg" tabindex="-1" role="dialog" aria-labelledby="important-msg-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <img class="modal-check" src="../../assets/img/svg/double-check.svg" alt="check" />
+              <h1 class="modal-title">This user has been 
+                created successfully</h1>
+              <p class="modal-text">A verification link has been sent to this users email address</p>
+            </div>           
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+      <script>
+
+
+          $('#createSubmit').click((event)=>{
+              event.preventDefault();
+       $('#successMsg').modal('show');
+       
+          })
+      </script>
 </body>
 </html>
