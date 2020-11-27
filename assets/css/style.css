@@ -72,6 +72,10 @@ a {
   color: inherit;
 }
 
+a:hover{
+  color: unset;
+}
+
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
@@ -187,7 +191,9 @@ width: 100vw;
         margin-left: 1.77vw;
       }
       
-      input[type=text][type=password][type=tel],
+      input[type=text],
+      input[type=password],
+      input[type=tel],
       textarea,
       select {
         margin-top: 2.31vh;

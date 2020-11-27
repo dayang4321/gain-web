@@ -78,7 +78,9 @@ textarea {
   margin-bottom: 10vh;
 }
 
-
+.modal-header .close{
+  display: none;
+}
 
 
 .modal-content {

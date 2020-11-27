@@ -10,11 +10,15 @@
   padding: 9vh 11vw;
 }
 
-#adminLoginForm input[type="text"][type="password"][type="tel"] {
+#adminLoginForm input[type="text"],
+#adminLoginForm input[type="password"],
+#adminLoginForm input[type="tel"] {
   max-width: unset;
 }
 
-#adminLoginForm input[type="text"][type="password"][type="tel"]::placeholder {
+#adminLoginForm input[type="text"]::placeholder,
+#adminLoginForm input[type="password"]::placeholder,
+#adminLoginForm input[type="tel"]::placeholder {
   font-family: "Century Gothic Italic", Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: normal;
