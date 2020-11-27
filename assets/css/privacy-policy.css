@@ -1,0 +1,26 @@
+@import url("./style.css");
+
+.privacy-main {
+  padding: 12vh 12.76vw 12vh;
+}
+
+.privacy-title {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  font-size: 2.969vw;
+  line-height: 1.22;
+  margin-bottom: 10.19vh;
+}
+
+.privacy-article {
+  font-family: var(--body-font-family);
+  font-size: 1.25vw;
+  line-height: 1.167;
+  text-align: justify;
+  color: #767676;
+}
+
+.privacy-article h6{
+    font-size: inherit;
+    margin: 3vh 0 2vh;
+}

@@ -149,13 +149,12 @@ html {
     font-family: "Century Gothic";
     background-color: #007e3b;
     border-radius: 20px;
-    font-style: normal;
     font-weight: bold;
     font-size: 0.9375vw;
     line-height: 1.2;
     color: #ffffff;
-    margin-bottom: 30px;
-    padding: 10px;
+    margin-bottom:2.77vh;
+    padding: 1.3vh;
 }
 
 .pop-btn:focus{
