@@ -254,6 +254,11 @@
   margin: 1.2vh 6.25vw; 
 }
 
+
+.modal{
+  z-index:10000;
+}
+
 .modal-content {
   font-family: var(--body-font-family);
   text-align: center;
@@ -266,4 +271,68 @@ margin-top: 4vh;
 
 .modal-text{
   margin: 3vh 0 0vh;
+}
+
+.modal-footer{
+  border: none;
+}
+
+#requestModal .modal-content {
+  background: rgba(0, 0, 0, 0.91);
+  border-radius: 19px;
+  color: white;
+  font-family: var(--body-font-family);
+  width: 58vw;
+  padding: 4vh 4.2vw;
+  margin: auto;
+  text-align: left;
+}
+#requestModal .modal-dialog{
+  width:unset;
+}
+.request-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4vh;
+}
+
+.company-info > h2,
+.request-info> h2{
+  margin-top: 1vh;
+  font-size: 1.875vw;
+  font-weight: 400;
+}
+
+.request-title{
+  font-weight: bold;
+font-size: 2.5vw;
+margin-bottom: 1vh;
+}
+
+.request-article{
+  font-weight: 400;
+font-size: 0.9375vw;
+text-align: justify;
+}
+
+.request-question{
+  font-size: 1.25vw;
+  text-align: right;
+}
+
+.action-btn{
+  font-weight: bold;
+font-size: 0.9375vw;
+text-align: center;
+padding: 1.67vh 5.2vw;
+margin-left: 1.5vw;
+}
+
+.action-btn:first-of-type{
+  background-color: #20AAB3;
+}
+
+.action-btn:last-of-type{
+  background-color: #B32037;  
 }

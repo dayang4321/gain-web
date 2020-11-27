@@ -133,7 +133,7 @@ Highcharts.mapChart("container", {
                                 etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
                                 </p>
                                 <p class="pop-summary-location">Lagos, Nigeria</p>
-                                <button class="pop-info-btn"></button>
+                                <button class="pop-info-btn"  data-toggle="modal" data-target="#requestModal"></button>
                             </div>
                         </div>
                         <div class="pop-info">
@@ -144,7 +144,7 @@ Highcharts.mapChart("container", {
                                 etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
                                 </p>
                                 <p class="pop-summary-location">Port Harcourt, Nigeria</p>
-                                <button class="pop-info-btn"></button>
+                                <button class="pop-info-btn" data-toggle="modal" data-target="#requestModal"></button>
                             </div>
                         </div>
                         <div class="pop-info">
@@ -155,7 +155,7 @@ Highcharts.mapChart("container", {
                                 etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
                                 </p>
                                 <p class="pop-summary-location">Benin, Nigeria</p>
-                                <button class="pop-info-btn"></button>
+                                <button class="pop-info-btn" data-toggle="modal" data-target="#requestModal"></button>
                             </div>
                         </div>
                         <div class="pop-info">

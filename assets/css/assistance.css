@@ -78,13 +78,7 @@ textarea {
   margin-bottom: 10vh;
 }
 
-.modal-dialog{
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  min-height: calc(100% - (.5rem * 2));
-}
+
 
 
 .modal-content {
