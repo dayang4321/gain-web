@@ -119,7 +119,7 @@ html {
 }
 
 .pop-scrollable{
-    padding: 0px 22px;
+    padding: 0px 1.13vw;
     max-height: 41.6vh;
     overflow-y: auto;
 }
