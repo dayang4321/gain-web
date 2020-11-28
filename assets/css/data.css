@@ -71,7 +71,7 @@ html {
     display: none;
 }
 
-.highcharts-point[fill="#007E3B"]{
+/* .highcharts-point[fill="#007E3B"]{
     stroke: #020202;
     stroke-width: 0.04375vw;
     cursor: pointer;
@@ -82,11 +82,12 @@ html {
    transition: all 0.2s ease-in;
 }
 
+
 .highcharts-point:not([fill="#007E3B"]){
     stroke: #6D6E71;
     stroke-width: 0.04375vw;
     fill:#F1F2F2;
-}
+} */
 
 .country-title {
     font-family: var(--heading-font-family);
@@ -124,7 +125,7 @@ html {
 }
 
 .admin.pop-scrollable{
-    padding: 0%;
+    padding: 0vh 6px;
     margin: auto -0.5vw;
 }
 .pop-scrollable::-webkit-scrollbar {
