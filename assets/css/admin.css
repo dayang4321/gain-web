@@ -179,7 +179,8 @@
 
 .control:hover input ~ .control__indicator,
 .control input:focus ~ .control__indicator {
-  background: #cdf5e0;
+  border: 2.5px solid #777;
+  transition: all 0.3s;
 }
 .control input:checked ~ .control__indicator {
   background: #019747;
@@ -202,10 +203,10 @@
   display: block;
 }
 .control--checkbox .control__indicator:after {
-  left: 30%;
-  top: 0%;
-  width: 0.16vw;
-  height: 0.74vh;
+  left: 25%;
+  top: 10%;
+  width: 0.3vw;
+  height: 0.75vh;
   border: solid #fff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
@@ -294,6 +295,27 @@ margin-top: 4vh;
 #requestModal .modal-dialog{
   width:unset;
 }
+
+#requestModal .close{
+  position: absolute;
+  top: 3.7vh;
+  right: 2.5vw;
+  opacity: 1;
+  color: #7D7D7D;
+}
+
+.modal-header button span:first-child {
+  border-radius: 50%;
+  border: 3.3px solid ;
+  width: 40px;
+  height: 40px;
+  display: inline-table;
+  color: inherit;
+  font-size: 40px;
+  text-shadow: none;
+}
+
+
 .request-header{
   display: flex;
   justify-content: space-between;
@@ -340,3 +362,4 @@ margin-left: 1.5vw;
 .action-btn:last-of-type{
   background-color: #B32037;  
 }
+
