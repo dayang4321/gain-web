@@ -84,7 +84,7 @@ var chart = Highcharts.mapChart("container", {
               ins.setContent(
                 `<div class="popover-content">
                     <h1 class="country-title">${this.name}</h1>
-                    <a class="pop-btn">REQUEST ASSISTANCE</a>
+                    <a href="../../assistance" class="pop-btn">REQUEST ASSISTANCE</a>
                     <div class="pop-scrollable">
                       <img class="pop-img" src='../../assets/img/popImg.jpg' />
                       <div class="pop-box">
