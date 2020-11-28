@@ -60,34 +60,38 @@ var data = [
 
 var country = "";
 // Create the chart
-Highcharts.mapChart("container", {
+var chart = Highcharts.mapChart("container", {
   chart: {
     map: "custom/asia",
     events: {
       load: () => {
             instance = tippy('.highcharts-point[fill="#007E3B"]', {
-                arrow: `<svg width="53" height="60" viewBox="0 0 53 60" transform="rotate(0)"  fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.861279 59.9631L0.861275 0.240383L52.5827 30.1018L0.861279 59.9631Z" fill="black" fill-opacity="0.76"/>
-                </svg>`,
+                // arrow: `<svg width="53" height="60" viewBox="0 0 53 60" transform="rotate(0)"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                // <path d="M0.861279 59.9631L0.861275 0.240383L52.5827 30.1018L0.861279 59.9631Z" fill="black" fill-opacity="0.76"/>
+                // </svg>`,
+              arrow: false,
           allowHTML: true,
           content: ``,
           trigger: "click",
           maxWidth: "23.43vw",
           followCursor: "initial",
           interactive: true,
-          appendTo: () => document.body,
+          appendTo:  document.querySelector('#container'),
           placement: "auto",
-                hideOnClick: true,
-        
-                offset: [20, 50],
+          hideOnClick: true,        
+          offset: [20, 50],
           onTrigger(instance, event) {
             //  console.log(event.target)
-            // ...
-            console.log(country);
-          },
-          onUntrigger(instance, event) {
-            country = "destroyed";
-          },
+              },
+              onHide(instance) {
+                // ...
+                const data = chart.series[0].data;
+                data.forEach((point,index) => {
+                  if (point.selected === true) {
+                    point.select()
+                  }
+                })
+              },
         });
       },
     },
@@ -108,8 +112,9 @@ Highcharts.mapChart("container", {
     enabled: false,
   },
 
-  plotOptions: {
+  plotOptions: { 
     series: {
+      allowPointSelect: true,
       point: {
         events: {
           click: function (e) {
@@ -119,17 +124,29 @@ Highcharts.mapChart("container", {
               ins.setContent(
                 `<div class="popover-content">
                     <h1 class="country-title">${this.name}</h1>
-                    <button class="pop-btn">REQUEST ASSISTANCE</button>
+                    <a class="pop-btn">REQUEST ASSISTANCE</a>
                     <div class="pop-scrollable">
-                    <img class="pop-img" src='../../assets/img/OIP (2) 1.jpg' />
-                    <p class="pop-article">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                     nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi 
-                     enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                     nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
-                    hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
-                     nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit 
-                     praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                    </p>
+                      <img class="pop-img" src='../../assets/img/popImg.jpg' />
+                      <div class="pop-box">
+                        <p>Baby food, Puree, Formula and Milk</p>
+                        <p>Lagos</p>
+                      </div>
+                      <div class="pop-box">
+                        <p>Baby food, Puree, Formula and Milk</p>
+                        <p>Lagos</p>
+                      </div>
+                      <div class="pop-box">
+                        <p>Baby food, Puree, Formula and Milk</p>
+                        <p>Lagos</p>
+                      </div>
+                      <div class="pop-box">
+                        <p>Baby food, Puree, Formula and Milk</p>
+                        <p>Lagos</p>
+                      </div>
+                      <div class="pop-box">
+                        <p>Baby food, Puree, Formula and Milk</p>
+                        <p>Lagos</p>
+                      </div>
                     </div>
                     <div class="pop-footer">Scroll to see more</div>
                                           </div>`
@@ -141,46 +158,32 @@ Highcharts.mapChart("container", {
     },
   },
 
-  series: [
-    {
-      data: data,
-      name: "Random data",
-      states: {
-        hover: {
-          color: "#007E3B",
-        },
-      },
-      dataLabels: {
-        enabled: false,
-        format: "{point.name}",
-      },
+  series: [{
+    data: data,
+  name: "Random data",
+  borderColor: '#6D6E71',
+  nullColor: '#F1F2F2',
+    borderWidth: '0.04375vw',
+   color: "#007E3B",
+  states: {
+    hover: {
+        color: '#00EA55'
     },
-  ],
+    select: {
+      color: '#F48220'
+    }
+},
+    dataLabels: {
+      enabled: false,
+      format: "{point.name}",
+    },
+  },
+],
+
 
   legend: {
     enabled: false,
   },
 });
 
-function hideOnClickOutside(selector) {
-  const outsideClickListener = (event) => {
-    const $target = $(event.target);
-    if (!$target.closest(selector).length && $(selector).is(":visible")) {
-      console.log("shown");
-      $(selector).hide();
-      removeClickListener();
-    }
-  };
 
-  const removeClickListener = () => {
-    document.removeEventListener("click", outsideClickListener);
-    console.log("removed");
-  };
-
-  document.addEventListener("click", outsideClickListener);
-  console.log("added");
-}
-
-console.log(instance);
-
-// hideOnClickOutside(".popover");

@@ -71,12 +71,12 @@ html {
     display: none;
 }
 
-/* .highcharts-point[fill="#007E3B"]{
+.highcharts-point:not([fill="#F1F2F2"]){
     stroke: #020202;
     stroke-width: 0.04375vw;
     cursor: pointer;
 }
-
+/*
 .highcharts-point[fill="#007E3B"]:hover{
    fill: #CAD023;
    transition: all 0.2s ease-in;
@@ -147,7 +147,7 @@ html {
 
 
 .pop-btn {
-    font-family: "Century Gothic";
+    font-family: var(--heading-font-family);
     background-color: #007e3b;
     border-radius: 20px;
     font-weight: bold;
@@ -156,6 +156,7 @@ html {
     color: #ffffff;
     margin-bottom:2.77vh;
     padding: 1.3vh;
+    text-align: center;
 }
 
 .pop-btn:focus{
@@ -191,6 +192,27 @@ input.pop-search:focus{
 
 .pop-svg{
     max-width: 4.22vw;
+}
+.pop-box:first-of-type{
+    margin-top: 7vh;
+}
+
+.pop-box{
+    font-family: var(--body-font-family);
+    font-size: 0.9375vw;
+    line-height: 1.167;    
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    margin: 0 10px;
+    padding: 1.8vh 0.4vw 1vw  ;
+}
+.pop-box p{
+    text-align: right;
+}
+
+.pop-box p:last-of-type{
+    font-style: italic;
+    margin-top: 1vh;
 }
 
 

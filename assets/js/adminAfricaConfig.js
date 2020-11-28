@@ -256,28 +256,6 @@ var chart = Highcharts.mapChart("container", {
   },
 });
 
-// function hideOnClickOutside(selector) {
-//   const outsideClickListener = (event) => {
-//     const $target = $(event.target);
-//     if (!$target.closest(selector).length && $(selector).is(":visible")) {
-//       console.log("shown");
-//       $(selector).hide();
-//       removeClickListener();
-//     }
-//   };
 
-//   const removeClickListener = () => {
-//     document.removeEventListener("click", outsideClickListener);
-//     console.log("removed");
-//   };
 
-//   document.addEventListener("click", outsideClickListener);
-//   console.log("added");
-// }
 
-console.log(instance);
-console.log(chart);
-console.log(chart.series[0].data[0].selected)
-// chart.series[0].data
-//chart.series[0].data[0].select();
-// hideOnClickOutside(".popover");

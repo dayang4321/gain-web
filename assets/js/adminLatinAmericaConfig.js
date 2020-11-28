@@ -20,40 +20,58 @@ var data = [
 ];
 
 // Create the chart
-Highcharts.mapChart("container", {
+var chart = Highcharts.mapChart("container", {
   chart: {
+    type: 'map',
     map: "custom/south-america",
+    animation: true,
     events: {
       load: () => {
             instance = tippy('.highcharts-point[fill="#007E3B"]', {
-                arrow: `<svg width="53" height="60" viewBox="0 0 53 60" transform="rotate(0)"  fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.861279 59.9631L0.861275 0.240383L52.5827 30.1018L0.861279 59.9631Z" fill="black" fill-opacity="0.76"/>
-                </svg>`,
+                // arrow: `<svg width="53" height="60" viewBox="0 0 53 60" transform="rotate(0)"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                // <path d="M0.861279 59.9631L0.861275 0.240383L52.5827 30.1018L0.861279 59.9631Z" fill="black" fill-opacity="0.76"/>
+                // </svg>`,
+              arrow: false,
           allowHTML: true,
-          content: ``,
-          trigger: "click",
+              content: ``,
+              trigger:'click',
+              hideOnClick: 'toggle',
           maxWidth: "23.43vw",
           followCursor: "initial",
           interactive: true,
-          appendTo: () => document.body,
+          appendTo: document.querySelector('#container'),
           placement: "auto",
-                hideOnClick: true,
-        
                 offset: [20, 50],
           onTrigger(instance, event) {
             //  console.log(event.target)
             // ...
-          
-          },
+        
+              },
+              onClickOutside(instance, event) {
+                // ...
+                if ( !($('#requestModal').is(':visible')) ) {
+                  instance.hide();
+                } else  return          
+              },
+              onHide(instance) {
+                // ...
+                const data = chart.series[0].data;
+                console.log(data, 'untriggered')
+                data.forEach((point,index) => {
+                  if (point.selected === true) {
+                    point.select()
+                  }
+                })
+              },
           onUntrigger(instance, event) {
-           
+       
           },
         });
       },
     },
   },
 
-  colors: ["#007E3B"],
+  //colors: ["#007E3B","#CAD023" ],
 
   title: {
     text: "",
@@ -67,13 +85,23 @@ Highcharts.mapChart("container", {
   tooltip: {
     enabled: false,
   },
+  
+  // mapNavigation: {
+  //   enabled: true,
+  //   buttonOptions: {
+  //       verticalAlign: 'bottom'
+  //   }
+  // },
 
   plotOptions: {
     series: {
+      allowPointSelect: true,
+      stickyTracking: false,
+      borderColor:'#000000',
       point: {
         events: {
           click: function (e) {
-            country = this.name;
+            country = this;
             console.log(country);
             instance.forEach((ins) =>
               ins.setContent(
@@ -89,7 +117,7 @@ Highcharts.mapChart("container", {
                                 etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
                                 </p>
                                 <p class="pop-summary-location">Lagos, Nigeria</p>
-                                <button class="pop-info-btn"></button>
+                                <button class="pop-info-btn"  data-toggle="modal" data-target="#requestModal"></button>
                             </div>
                         </div>
                         <div class="pop-info">
@@ -100,7 +128,7 @@ Highcharts.mapChart("container", {
                                 etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
                                 </p>
                                 <p class="pop-summary-location">Port Harcourt, Nigeria</p>
-                                <button class="pop-info-btn"></button>
+                                <button class="pop-info-btn" data-toggle="modal" data-target="#requestModal"></button>
                             </div>
                         </div>
                         <div class="pop-info">
@@ -111,7 +139,7 @@ Highcharts.mapChart("container", {
                                 etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
                                 </p>
                                 <p class="pop-summary-location">Benin, Nigeria</p>
-                                <button class="pop-info-btn"></button>
+                                <button class="pop-info-btn" data-toggle="modal" data-target="#requestModal"></button>
                             </div>
                         </div>
                         <div class="pop-info">
@@ -158,15 +186,21 @@ Highcharts.mapChart("container", {
     },
   },
 
-  series: [
-    {
+  series: [{
       data: data,
-      name: "Random data",
-      states: {
-        hover: {
-          color: "#007E3B",
-        },
+    name: "Random data",
+    borderColor: '#6D6E71',
+    nullColor: '#F1F2F2',
+      borderWidth: '0.04375vw',
+     color: "#007E3B",
+    states: {
+      hover: {
+          color: '#00EA55'
       },
+      select: {
+        color: '#F48220'
+      }
+  },
       dataLabels: {
         enabled: false,
         format: "{point.name}",
@@ -179,25 +213,4 @@ Highcharts.mapChart("container", {
   },
 });
 
-function hideOnClickOutside(selector) {
-  const outsideClickListener = (event) => {
-    const $target = $(event.target);
-    if (!$target.closest(selector).length && $(selector).is(":visible")) {
-      console.log("shown");
-      $(selector).hide();
-      removeClickListener();
-    }
-  };
 
-  const removeClickListener = () => {
-    document.removeEventListener("click", outsideClickListener);
-    console.log("removed");
-  };
-
-  document.addEventListener("click", outsideClickListener);
-  console.log("added");
-}
-
-console.log(instance);
-
-// hideOnClickOutside(".popover");

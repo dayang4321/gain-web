@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/svg-arrow.css" />
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../../../assets/css/data.css" />
     <link rel="stylesheet" href="../../../assets/css/admin.css" />
     <title>Scaling Up Nutrition</title>
@@ -118,6 +119,68 @@
         </nav>
             <div id="container"></div>
     </main>
+    <div
+    class="modal fade"
+    id="requestModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="important-msg-label"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span
+            ><span class="sr-only">Close</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="request-header">
+            <div class="company-info">
+              <img
+                class=""
+                src="../../../assets/img/svg/popImg1.svg"
+                alt="logo"
+              />
+              <h2>Company Name</h2>
+            </div>
+            <div class="request-info">
+              <h1 class="request-title">Title of request</h1>
+              <h2>Location</h2>
+            </div>
+          </div>
+          <article class="request-article">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+              diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+              aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+              nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+              aliquip. Lorem ipsum dolor sit amet, consectetuer adipiscing
+              elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+              magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+              nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+              aliquip.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+              diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+              aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+              nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+              aliquip
+            </p>
+          </article>
+          <p class="request-question">Has this request been fully completed?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="action-btn" data-dismiss="modal">
+            Yes
+          </button>
+          <button type="button" class="action-btn">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="https://code.highcharts.com/maps/highmaps.js"></script>
     <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/mapdata/custom/south-america.js"></script>
@@ -126,5 +189,12 @@
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <script src="../../../assets/js/adminLatinAmericaConfig.js"></script>
+    <script type="text/javascript" src="../../../assets/js/bootstrap.min.js" ></script>
+    <script>
+      $("#createSubmit").click((event) => {
+        event.preventDefault();
+        $("#successMsg").modal("show");
+      });
+    </script>
 </body>
 </html>
