@@ -139,9 +139,10 @@ margin: 5vh 0 4vh;
   border: 1px solid #c4c4c4;
 }
 
-.control:hover input ~ .control__indicator,
-.control input:focus ~ .control__indicator {
-  background: #cdf5e0;
+#assistanceForm .control:hover input ~ .control__indicator,
+#assistanceForm .control input:focus ~ .control__indicator {
+  border: 0.25vw solid #777;
+  transition: all 1s;
 }
 .control input:checked ~ .control__indicator {
   background: #019747;

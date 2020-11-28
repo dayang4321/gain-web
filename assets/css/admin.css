@@ -179,8 +179,8 @@
 
 .control:hover input ~ .control__indicator,
 .control input:focus ~ .control__indicator {
-  border: 2.5px solid #777;
-  transition: all 0.3s;
+  border: 0.14vw solid #777;
+  transition: all 1s;
 }
 .control input:checked ~ .control__indicator {
   background: #019747;
@@ -235,13 +235,19 @@
 }
 
 #createUserForm .control--checkbox .control__indicator:after {
-  left: 33%;
-  top: 10%;
-  width: 0.6vw;
-  height: 2vh;
+  left: 36%;
+    top: 15%;
+    width: 0.6vw;
+    height: 2.2vh;
   border: solid #fff;
   border-width: 0 0.26vw 0.26vw 0;
   transform: rotate(45deg);
+}
+
+#createUserForm .control:hover input ~ .control__indicator,
+#createUserForm .control input:focus ~ .control__indicator {
+  border: 0.25vw solid #777;
+  transition: all 1s;
 }
 
 .privacy-check{
