@@ -78,6 +78,7 @@ textarea {
   float: right;
   margin-top: 4vh;
   margin-bottom: 4vh;
+  border-radius: 0.7vw;
 }
 
 .modal-header .close{

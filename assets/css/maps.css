@@ -29,6 +29,7 @@
    padding: 5vh 2.5vw;
    border-radius: 13px;
    flex: 1 1 0px;
+   border-radius: 0.7vw;
 }
 
 .map-link:nth-of-type(2){
