@@ -127,7 +127,7 @@ var chart = Highcharts.mapChart("container", {
    color: "#007E3B",
   states: {
     hover: {
-        color: '#00EA55'
+        color: '#CAD023'
     },
     select: {
       color: '#F48220'
