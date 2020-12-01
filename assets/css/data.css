@@ -12,6 +12,13 @@ html {
   flex-direction: row;
 }
 
+.top-nav{
+    display: none;
+}
+
+.base-nav{
+    display: none;
+}
 .side-nav {
   min-width: 14.79vw;
   box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.13);
@@ -28,7 +35,7 @@ html {
     padding: 0;
 }
 
-.side-nav .nav-item a {
+.map-nav .nav-item a {
   font-family: var(--heading-font-family);
   font-weight: bold;
   background-color: var(--primary-color);
@@ -37,8 +44,9 @@ html {
   border: 3px solid #147F3D;
   padding: 0.75vh;
   margin: 1.1vh 0;
-  font-size: 0.807vw;
+  font-size: var(--link-text);
 }
+
 
 .side-nav ul {
     padding : 0 3.46vw;
@@ -46,9 +54,9 @@ html {
 }
 
 
-.side-nav .nav-item a.active,
-.side-nav .nav-item a:active,
-.side-nav .nav-item a:hover{
+.map-nav .nav-item a.active,
+.map-nav .nav-item a:active,
+.map-nav .nav-item a:hover{
     background-color: #FFFFFF;
     color:var(--primary-color); ;
 }
@@ -355,3 +363,41 @@ text-align: center;
 }
 
 
+@media (max-width: 767.98px) {  
+
+
+    .data-main {
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      #container {
+        max-height: 92%;
+        min-width: 85vw;
+        margin: 0 0;
+        position: relative;
+         top: 1.2vh;
+    
+    }
+
+    .side-nav{
+        display: none;
+    }
+
+    .top-nav{
+        display: unset;
+        margin: 4vh 0 0 7vw;
+    }
+
+    .base-nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 4vh 7vw 0 7vw;
+    }
+
+    .map-nav .nav-item{
+        width: 45%
+    }
+
+
+}
