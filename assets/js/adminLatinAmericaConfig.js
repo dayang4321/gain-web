@@ -19,6 +19,7 @@ var data = [
     // ['co', 12]
 ];
 
+
 var tippyWidth = 'max(23.43vw, 321px)';
 
 if ($(window).width() < 768) {
@@ -42,7 +43,7 @@ var chart = Highcharts.mapChart("container", {
               content: ``,
               trigger:'click',
               hideOnClick: 'toggle',
-          maxWidth: "23.43vw",
+          maxWidth: tippyWidth,
           followCursor: "initial",
           interactive: true,
           appendTo: document.querySelector('#container'),
@@ -62,13 +63,39 @@ var chart = Highcharts.mapChart("container", {
               onHide(instance) {
                 // ...
                 const data = chart.series[0].data;
-                console.log(data, 'untriggered')
+                // console.log(data, 'untriggered')
                 data.forEach((point,index) => {
                   if (point.selected === true) {
                     point.select()
                   }
                 })
               },
+              popperOptions: {
+                strategy: 'fixed',
+                modifiers: [
+                  {
+                    name: 'flip',
+                    options: {
+                      fallbackPlacements: ['bottom', 'right'],
+                    },
+                  },
+                  {
+                    name: 'preventOverflow',
+                    options: {
+                      mainAxis: true,
+                      altAxis: true,
+                      tether: false,
+                      boundary:document.querySelector('#container'),
+                    },
+                  },
+                ],
+              },
+              getReferenceClientRect: () => ({
+                width: 10,
+                height: 10,
+                left: 100,
+                top: 100,
+              }),
           onUntrigger(instance, event) {
        
           },
@@ -103,15 +130,18 @@ var chart = Highcharts.mapChart("container", {
     series: {
       allowPointSelect: true,
       stickyTracking: false,
-      borderColor:'#000000',
       point: {
         events: {
           click: function (e) {
-            country = this;
-            console.log(country);
+            // country = this;
+            // console.log(country);
             instance.forEach((ins) =>
               ins.setContent(
                 `<div class="popover-content">
+                <button type="button" class="close">
+                <span aria-hidden="true">&times;</span
+                ><span class="sr-only">Close</span>
+                </button>
                     <h1 class="country-title">${this.name}</h1>
                     <input class="pop-search" type="text" />
                     <div class="pop-scrollable admin">
@@ -186,6 +216,13 @@ var chart = Highcharts.mapChart("container", {
                 </div>`
               )
             );
+            $('.popover-content .close').click(function(){
+              //  instance.hide()
+                instance.forEach((ins) => {
+                  ins.hide()
+                })
+                }
+              )
           },
         },
       },
@@ -201,7 +238,7 @@ var chart = Highcharts.mapChart("container", {
      color: "#007E3B",
     states: {
       hover: {
-          color:'#CAD023'
+          color: '#CAD023'
       },
       select: {
         color: '#F48220'
@@ -218,5 +255,6 @@ var chart = Highcharts.mapChart("container", {
     enabled: false,
   },
 });
+
 
 
