@@ -308,7 +308,7 @@ line-height: 1.15;
 margin-top: 0.8vh;
 font-style: italic;
 font-weight: bold;
-font-size: 0.9375vw;
+font-size: var(--body-text);
 text-align: right;
 }
 
@@ -343,7 +343,7 @@ margin-top:1.5vh ;
 
 
 .pop-article{
-font-family: 'Roboto', Arial, Helvetica, sans-serif;
+font-family: var(--body-font-family);
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -352,7 +352,7 @@ line-height: 21px;
 }
 
 .pop-footer{
-    font-family: Roboto;
+font-family: var(--body-font-family);
 font-style: italic;
 font-weight: normal;
 font-size: 12px;

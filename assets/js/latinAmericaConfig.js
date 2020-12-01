@@ -33,13 +33,39 @@ var chart = Highcharts.mapChart("container", {
           allowHTML: true,
           content: ``,
           trigger: "click",
-          maxWidth: "23.43vw",
+          maxWidth: tippyWidth,
           followCursor: "initial",
           interactive: true,
           appendTo:  document.querySelector('#container'),
           placement: "auto",
           hideOnClick: true,        
-          offset: [20, 50],
+              offset: [20, 50],
+              popperOptions: {
+                strategy: 'fixed',
+                modifiers: [
+                  {
+                    name: 'flip',
+                    options: {
+                      fallbackPlacements: ['bottom', 'right'],
+                    },
+                  },
+                  {
+                    name: 'preventOverflow',
+                    options: {
+                      mainAxis: true,
+                      altAxis: true,
+                      tether: false,
+                      boundary:document.querySelector('#container'),
+                    },
+                  },
+                ],
+              },
+              getReferenceClientRect: () => ({
+                width: 10,
+                height: 10,
+                left: 100,
+                top: 100,
+              }),
           onTrigger(instance, event) {
             //  console.log(event.target)
               },
@@ -83,6 +109,10 @@ var chart = Highcharts.mapChart("container", {
             instance.forEach((ins) =>
               ins.setContent(
                 `<div class="popover-content">
+                <button type="button" class="close">
+                <span aria-hidden="true">&times;</span
+                ><span class="sr-only">Close</span>
+                </button>
                     <h1 class="country-title">${this.name}</h1>
                     <a href="../../assistance" class="pop-btn">REQUEST ASSISTANCE</a>
                     <div class="pop-scrollable">
@@ -112,6 +142,14 @@ var chart = Highcharts.mapChart("container", {
                                           </div>`
               )
             );
+
+            $('.popover-content .close').click(function(){
+            //  instance.hide()
+              instance.forEach((ins) => {
+                ins.hide()
+              })
+              }
+            )
           },
         },
       },
@@ -145,5 +183,4 @@ var chart = Highcharts.mapChart("container", {
     enabled: false,
   },
 });
-
 
