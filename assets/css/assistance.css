@@ -55,13 +55,12 @@
 
 .modal-title{
 font-weight: bold;
-font-size: 2.24vw;
+font-size: var(--h2-font-size);
 line-height:1.23;
-
 }
 
 .modal-text{
-  font-size: 1.25vw;
+  font-size: var(--big-text);
 line-height: 1.2;
 margin: 5vh 0 4vh;
 }
@@ -202,4 +201,14 @@ margin: 5vh 0 4vh;
   padding-left: max(3.2vw, 45px);
 }
 
+.modal-title{
+  font-size: var(--h3-font-size);
+  }
+.modal-content{
+  width: min(90vw, 373px);
+}
+
+.modal-text{
+  font-size: var(--bold-text);
+}
 }

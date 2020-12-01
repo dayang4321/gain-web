@@ -62,6 +62,12 @@ var data = [
   ['cf', 56] //Central African Republic
 ];
 
+var tippyWidth = 'max(23.43vw, 321px)';
+
+if ($(window).width() < 768) {
+  tippyWidth = 'min(77vw, 321px)'
+}
+
 // Create the chart
 var chart = Highcharts.mapChart("container", {
   chart: {
@@ -76,13 +82,39 @@ var chart = Highcharts.mapChart("container", {
           allowHTML: true,
           content: ``,
           trigger: "click",
-          maxWidth: "23.43vw",
+          maxWidth: tippyWidth,
           followCursor: "initial",
           interactive: true,
           appendTo:  document.querySelector('#container'),
           placement: "auto",
           hideOnClick: true,        
-          offset: [20, 50],
+              offset: [20, 50],
+              popperOptions: {
+                strategy: 'fixed',
+                modifiers: [
+                  {
+                    name: 'flip',
+                    options: {
+                      fallbackPlacements: ['bottom', 'right'],
+                    },
+                  },
+                  {
+                    name: 'preventOverflow',
+                    options: {
+                      mainAxis: true,
+                      altAxis: true,
+                      tether: false,
+                      boundary:document.querySelector('#container'),
+                    },
+                  },
+                ],
+              },
+              getReferenceClientRect: () => ({
+                width: 10,
+                height: 10,
+                left: 100,
+                top: 100,
+              }),
           onTrigger(instance, event) {
             //  console.log(event.target)
               },
