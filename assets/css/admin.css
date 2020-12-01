@@ -59,7 +59,7 @@
   margin-bottom: 3vh;
 }
 
-.maps-main.admin-maps-main {
+.admin .maps-content{
   padding: 9.259vh 15vw 0 15vw;
 }
 
@@ -75,7 +75,7 @@
 .admin-maps-welcome {
   font-family: var(--heading-font-family);
   font-weight: bold;
-  font-size: 3.333vw;
+  font-size: var(--h1-font-size);
   line-height: 1.219;
 }
 
@@ -83,7 +83,9 @@
   background-image: url(../img/svg/user-login.svg);
   background-size: cover;
   width: 6.041vw;
+  min-width: 48px;
   height: 6.041vw;
+  min-height: 48px;
 }
 
 #createUserForm input[type="submit"] {
@@ -418,6 +420,18 @@ color: #FFFFFF;
 
 #createUserForm .control {
   font-size: var(--body-text);
+}
+
+.admin .maps-content{
+  padding: 5vh 8vw;
+}
+
+.admin-maps-welcome { 
+  font-size: var(--h2-font-size);
+}
+
+.admin-maps-intro { 
+  margin-bottom: 4vh;
 }
 
 }
