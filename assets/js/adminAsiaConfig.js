@@ -59,6 +59,12 @@ var data = [
      ['kg', 52] //Kyrgyzstan
 ];
 
+var tippyWidth = 'max(23.43vw, 321px)';
+
+if ($(window).width() < 768) {
+  tippyWidth = 'min(77vw, 321px)'
+}
+
 // Create the chart
 var chart = Highcharts.mapChart("container", {
   chart: {
