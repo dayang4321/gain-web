@@ -100,7 +100,7 @@ html {
 .country-title {
     font-family: var(--heading-font-family);
     text-transform: uppercase;
-    font-size: 2.18vw;
+    font-size: var(--h2-font-size);
     text-align: right;
     margin: 0 0 2.5vh;
 }
@@ -116,7 +116,7 @@ html {
     border-radius: 20px;  
 }
 .tippy-content{
-    padding: 4vh 1.56vw 1.5vh;
+    padding: 4vh max(1.56vw,16px) 1.5vh;
     background: rgba(0, 0, 0, 0.66);
     border-radius: 20px;
 }
@@ -125,6 +125,31 @@ html {
     display: flex;
     flex-direction: column;
 }
+
+.popover-content .close{
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 1;
+    color: #7D7D7D;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3.3px solid;
+    align-items: flex-end;
+    justify-content: center;
+    visibility: hidden;
+  }
+
+.popover-content button span:first-child {
+
+    display: inline-table;
+    color: inherit;
+    font-size: 30px;
+    text-shadow: none;
+  }
 
 .pop-scrollable{
     padding: 0px 1.13vw;
@@ -159,7 +184,7 @@ html {
     background-color: #007e3b;
     border-radius: 20px;
     font-weight: bold;
-    font-size: 0.9375vw;
+    font-size: var(--body-text);
     line-height: 1.2;
     color: #ffffff;
     margin-bottom:2.77vh;
@@ -186,6 +211,7 @@ input.pop-search {
     background-position: 93% 45%;
     background-size: 7%;
     font: 400 0.9375vw var(--heading-font-family);
+    color: #000000;
 }
 
 input.pop-search:focus{
@@ -207,7 +233,7 @@ input.pop-search:focus{
 
 .pop-box{
     font-family: var(--body-font-family);
-    font-size: 0.9375vw;
+    font-size: var(--body-text);
     line-height: 1.167;    
     color: #FFFFFF;
     border-bottom: 2px solid #FFFFFF;
@@ -397,6 +423,15 @@ text-align: center;
 
     .map-nav .nav-item{
         width: 45%
+    }
+
+
+    .country-title{
+        font-size: var(--h3-font-size);
+    }
+
+    .popover-content .close{
+        visibility: visible;
     }
 
 

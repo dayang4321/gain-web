@@ -158,6 +158,10 @@ var chart = Highcharts.mapChart("container", {
             instance.forEach((ins) =>
               ins.setContent(
                 `<div class="popover-content">
+                <button type="button" class="close">
+                <span aria-hidden="true">&times;</span
+                ><span class="sr-only">Close</span>
+                </button>
                     <h1 class="country-title">${this.name}</h1>
                     <a href="../../assistance" class="pop-btn">REQUEST ASSISTANCE</a>
                     <div class="pop-scrollable">
@@ -187,6 +191,14 @@ var chart = Highcharts.mapChart("container", {
                                           </div>`
               )
             );
+
+            $('.popover-content .close').click(function(){
+            //  instance.hide()
+              instance.forEach((ins) => {
+                ins.hide()
+              })
+              }
+            )
           },
         },
       },
