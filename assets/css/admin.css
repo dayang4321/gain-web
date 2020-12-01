@@ -6,8 +6,12 @@
   padding: 3.24vh 7.916vw 4.167vh 6.6vw;
 }
 
-.home-info.admin-info {
+.admin .home-info {
   padding: 9vh 11vw;
+}
+
+.admin .home-info-text{
+
 }
 
 #adminLoginForm input[type="text"],
@@ -16,13 +20,11 @@
   max-width: unset;
 }
 
-#adminLoginForm input[type="text"]::placeholder,
-#adminLoginForm input[type="password"]::placeholder,
-#adminLoginForm input[type="tel"]::placeholder {
-  font-family: "Century Gothic Italic", Arial, Helvetica, sans-serif;
+#adminLoginForm input::placeholder {
+  font-family: var(--heading-font-family);
   font-style: italic;
   font-weight: normal;
-  font-size: 0.9375vw;
+  font-size: var(--body-text);
   line-height: 1.23;
   color: #6d6e71;
 }
@@ -34,7 +36,7 @@
 #adminLoginForm input[type="submit"] {
   font-family: var(--heading-font-family);
   font-style: normal;
-  font-size: 0.9375vw;
+  font-size: var(--body-text);
   line-height: 1.23;
   color: #ffffff;
   background: #007e3b;
@@ -48,12 +50,13 @@
 
 .password-reset {
   font-family: var(--heading-font-family);
-  font-size: 0.9375vw;
+  font-size: var(--body-text);
   text-decoration-line: underline;
   color: #8c8c8c;
   text-align: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 3vh;
 }
 
 .maps-main.admin-maps-main {
@@ -85,14 +88,14 @@
 
 #createUserForm input[type="submit"] {
   font-weight: bold;
-  font-size: 2.5vw;
+  font-size: var(--big-text);
   padding: 1.85vh 6.72vw;
   float: right;
   margin-bottom: 2vh;
   border-radius: 0.7vw;
 }
 
-.create-user-main {
+.create-user-content {
   padding: 8vh 13vw;
 }
 
@@ -218,9 +221,9 @@
 
 #createUserForm .control {
   font-family: var(--heading-font-family);
-  padding-left: 3.2vw;
+  padding-left: max(3.2vw, 40px);
   margin-bottom: 0.5vh;
-  font-size: 1.25vw;
+  font-size: var(--big-text);
   letter-spacing: 0.3px;
   font-weight: 400;
   color: #000000;
@@ -229,8 +232,10 @@
 #createUserForm .control__indicator {
   top: -0.4vw;
   left: 0;
-  height: 2.5vw;
   width: 2.5vw;
+  min-width: 30px;
+  height: 2.5vw;
+  min-height: 30px;
   border: 3px solid #c4c4c4;
   border-radius: 10px;
 }
@@ -259,7 +264,7 @@
 
 .privacy-link {
   font-family: var(--heading-font-family);
-  font-size: 0.9375vw;
+  font-size:var(--body-text);
   line-height: 1.22;
   text-decoration: underline;
   color: #8C8C8C;
@@ -277,7 +282,7 @@
 }
 
 .modal-title{
-font-size: 1.875vw;
+font-size: var(--h3-font-size);
 margin-top: 4vh;
 }
 
@@ -370,3 +375,49 @@ margin-left: 1.5vw;
   background-color: #B32037;  
 }
 
+@media (max-width: 767.98px) {   
+
+  .admin .home-info{
+    top:80px;
+    padding: 6vh 8vw;
+  }
+
+ .admin.login .home-info {
+  padding: 3.5vh 8vw 0;
+  }
+  
+  .home-image.admin-home-image {
+    background: linear-gradient(rgba(24, 24, 24, 0.6), rgba(24, 24, 24, 0.6)) ,  url(../img/Food-Processing-Unit\ 1.jpg) center center;
+  }
+
+ .admin.login .home-info-title,
+.admin.login .home-info-text{
+  margin-bottom: 1vh;
+}
+
+#adminLoginForm input[type="text"],
+#adminLoginForm input[type="password"],
+#adminLoginForm input[type="tel"] {
+background-color: transparent;
+color: #FFFFFF;
+}
+
+#adminLoginForm input::placeholder {
+  color: #FFFFFF;
+}
+
+.password-reset{
+  color: #FFFFFF;
+}
+
+
+.create-user-content {
+  padding: 5vh 8vw;
+}
+
+
+#createUserForm .control {
+  font-size: var(--body-text);
+}
+
+}

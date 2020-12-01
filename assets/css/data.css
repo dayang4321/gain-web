@@ -428,6 +428,8 @@ text-align: center;
 
     .country-title{
         font-size: var(--h3-font-size);
+        max-width: 88%;
+        margin-left: auto;
     }
 
     .popover-content .close{

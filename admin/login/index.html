@@ -3,42 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/css/home.css" />
     <link rel="stylesheet" href="../../assets/css/admin.css" />
     <title>Scaling Up Nutrition</title>
 </head>
 <body tabindex="-1">
     <header>
-        <nav class="navbar admin-navbar" aria-label="Main Navigation">
-            <div class="navbar-brand">
-              <a href="#"> <img class="navbar-logo" src="../../assets/img/svg/mainLogo.svg" alt="logo"/></a> 
-            </div>
-
-            <ul class="nav-items">
-                <li class="nav-item">
-                    <a href="../maps/">VIEW REQUESTS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../create-user/">CREATE USER</a>
-                </li>            
-                <li class="nav-item">
-                    <a href="../">BACK TO MAIN SITE</a>
-                </li>
+        <nav class="navbar navbar-expand-md" aria-label="Main Navigation">         
+                <a  href="#" class="navbar-brand">
+                 <img class="navbar-logo" src="../../assets/img/svg/mainLogo.svg" alt="logo"/>
+                </a>
+             
+                  <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
                 
+          
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav-items navbar-nav">
+                <li class="nav-item">
+                    <a href="../maps/"> VIEW REQUESTS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../create-user/">CREATE USERS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../">BACK TO MAIN SITE</a>
+                </li>
+                <!-- <li class="nav-item navbar-dropdown">
+                    <button type="button" data-lang="en-gb" class="dropbtn" aria-expanded="false" aria-controls="langDropdown">
+                      EN
+                    </button>
+                    <ul class="dropdown-menu" id="langDropdown">
+                      <li><a href="#" data-lang="en-us" >EN-US</a></li>
+                      <li><a href="#" data-lang="en-fr" >FR</a></li>
+                      <li><a href="#" data-lang="en-es" >ES</a></li>
+                    </ul>
+                  </li> -->
             </ul>
-
-        </nav>
+            </div>
+        </nav>       
     </header>
-    <main class="home-main">
+    <main class="admin login home-main">
         <div class="home-image admin-home-image">
             
         </div>
         <div class="home-info admin-info">
             <h1 class="home-info-title">Assisting Nutrition brands to feed the world.</h1>
-            <p class="home-info-text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                 elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
-                 aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+            <p class="home-info-text">To consult the B2B technical assistance requests submitted, 
+                ongoing and completed in SUN countries, please use the map below and select the 
+                countries or the filtering section for information on national or thematic requests. 
+                If you would like to provide technical assistance to a request indicated as submitted,
+                 please click on it and selection the option ‘provide support’. You can then contact
+                  directly the focal point of the company for an introductory call.</p>
                 <form id="adminLoginForm">
                   
                         <div class="form-group">
@@ -55,7 +75,10 @@
            
         </div>
     </main>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../../assets/js/script.js"></script>
 </body>
 </html>
