@@ -62,12 +62,11 @@ html {
 }
 
 #container {
-    max-height: 92%;
+    max-height: 80%;
     min-width: 85vw;
     margin: 0 auto;
     position: relative;
-     top: 1.2vh;
-
+    top:0;
 }
 
 .highcharts-container{
@@ -210,7 +209,7 @@ input.pop-search {
     background-repeat: no-repeat;
     background-position: 93% 45%;
     background-size: 7%;
-    font: 400 0.9375vw var(--heading-font-family);
+    font: 400 var(--body-text) var(--heading-font-family);
     color: #000000;
 }
 
@@ -226,6 +225,7 @@ input.pop-search:focus{
 
 .pop-svg{
     max-width: 4.22vw;
+    min-width: 41px;
 }
 .pop-box:first-of-type{
     margin-top: 7vh;
@@ -253,7 +253,7 @@ input.pop-search:focus{
 .pop-info{
     display: flex;
     align-items: end;
-    padding: 2vh 1.14vw 2vh 0.57vw;
+    padding: 2vh max(1.14vw,5px) 2vh max(1.14vw,7.5px) ;
     font-family: var(--body-font-family);
     line-height: 1.2;
 }
@@ -279,11 +279,11 @@ input.pop-search:focus{
 }
 
 .pop-info-title span:first-of-type{
-font-size: 1.15vw;
+    font-size: var(--body-text);
 }
 
 .pop-info-title span:last-of-type{
-font-size: 0.807vw;
+font-size: var(--link-text);
 min-width: 5.78vw;
 text-align: right;
 }
@@ -301,7 +301,7 @@ text-align: right;
 }
 
 .pop-summary{
-font-size: 0.73vw;
+font-size: var(--link-text);
 line-height: 1.15;
 }
 .pop-summary-location{
@@ -324,7 +324,7 @@ margin-top:1.5vh ;
 
 .pop-info-btn::before{
     content: 'Mark as complete';
-    font-size: 0.807vw;
+    font-size: var(--link-text);
     font-weight: 500;
     font-family: var(--body-font-family);
     color: #FFFFFF;

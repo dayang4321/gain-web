@@ -254,8 +254,8 @@ input[type="submit"] {
     --h3-font-size: min(max(18px, 6.763vw), 34px);
   
     --big-text: min(max(16px, 5.8vw), 24px);
-    --body-text: min(max(10px, 3.14vw), 16px);
-    --link-text: min(max(12px, 3.62vw), 16px);
+    --body-text: min(max(12px, 3.64vw), 18px);
+    --link-text: min(max(10px, 3.62vw), 16px);
   }
   
 
