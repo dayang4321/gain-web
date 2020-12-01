@@ -283,10 +283,25 @@ input[type="submit"] {
     min-width: 140px;
   }
 
+  .navbar-collapse.show{
+    top: 100px;
+    left: 50%;
+    position: absolute;
+    margin: 0 auto;
+    transform: translate(-50%, 0%);
+    color: #ffffff;
+    width: 90%;
+  }
+
   .nav-items {
     background-color:  #707070;
     font-size: 15.5px;
-    margin-top: 4vh;
+    padding: 4vh 15vw ;
+  }
+
+  .navbar .nav-item a{
+    text-align: center;
+    margin: 10px 0;
   }
   .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
