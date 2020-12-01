@@ -385,8 +385,12 @@ margin-left: 1.5vw;
     padding: 6vh 8vw;
   }
 
+  .admin.login .home-main{
+    min-height: 750px;
+  }
+
  .admin.login .home-info {
-  padding: 3.5vh 8vw 0;
+  padding: 3.5vh 4.5vw 0;
   }
   
   .home-image.admin-home-image {
