@@ -1,6 +1,16 @@
+
+ $(document).ready(padder);
+
+ $(window).resize(padder);
+
+function padder() {
+  $('main').css({ paddingTop: $('.navbar').innerHeight() });
+}
+
+
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-
 $('.dropbtn').click(function () {
     console.log('clicked')
    $("#langDropdown").toggleClass("show");

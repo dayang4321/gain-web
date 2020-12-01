@@ -12,7 +12,7 @@
   --h2-font-size: min(max(24px, 2.5vw), 96px);
   --h3-font-size: min(max(20px, 1.875vw), 72px);
 
-  --big-text: min(max(12.5px, 1.25vw), 48px);
+  --big-text: min(max(18px, 1.25vw), 24px);
   --body-text: min(max(10px, 0.9375vw), 36px);
   --link-text: min(max(10px, 0.8333vw), 32px);
 }
@@ -29,7 +29,7 @@ body {
 }
 
 body {
-  padding-top: 13vh;
+
 }
 
 .li {
@@ -90,10 +90,8 @@ ul {
 }
 
 .nav-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: var(--link-text);
+
+  font-size: 15.5px
 }
 
 .nav-item {
@@ -154,15 +152,19 @@ ul {
 
 label {
   font-family: var(--heading-font-family);
-  font-size: 1.25vw;
+  font-size: var(--big-text);
   line-height: 1.16;
   text-transform: uppercase;
   display: block;
+  margin-bottom: 0;
 }
 
 .form-group {
   flex: 1 1 0px;
   margin-bottom: 4.722vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .form-row > .form-group:first-of-type {
@@ -246,4 +248,87 @@ input[type="submit"] {
 
 .modal-content {
   margin: auto;
+}
+
+
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+ 
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+  :root {
+    --h1-font-size: min(max(24px, 11.59vw), 54px);
+    --h2-font-size: min(max(20px, 8.69vw), 40px);
+    --h3-font-size: min(max(18px, 6.763vw), 34px);
+  
+    --big-text: min(max(16px, 5.8vw), 24px);
+    --body-text: min(max(10px, 3.14vw), 16px);
+    --link-text: min(max(10px, 0.8333vw), 32px);
+  }
+  
+
+
+
+
+
+  .navbar{
+
+  }
+  .navbar-brand {
+    width: min(39.85vw, 200px);
+    min-width: 140px;
+  }
+
+  .nav-items {
+    background-color:  #707070;
+    font-size: 15.5px;
+    margin-top: 4vh;
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  label {
+    font-size: var(--body-text);
+}
+
+input[type="text"], input[type="password"], input[type="tel"], textarea, select {
+  margin-top: 1.31vh;
+  width: 100%;
+  height: 7.5vh;
+  border: 2px solid #c4c4c4;
+  border-radius: 13px;
+  font: 400 1.25vw var(--heading-font-family);
+  padding: 1.67vh 1.875vw;
+  max-width: unset;
+}
+
+.form-row > .form-group:first-of-type {
+  margin-right: unset;
+}
+.form-row > .form-group:last-of-type {
+  margin-left: unset;
+}
+
+
+}
+
+ /* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+  
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+  
+
 }

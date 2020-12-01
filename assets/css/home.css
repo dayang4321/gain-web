@@ -3,8 +3,8 @@
 .home-main{
     display: flex;
     justify-content: center;
-    height: 87vh;
-    min-height: 400px;
+height: 100vh;
+    min-height: 650px;
     flex-direction: row;
     font-family: var(--body-font-family);
 }
@@ -22,7 +22,7 @@
 
 .home-info-title{
 font-weight: bold;
-font-size: 2.969vw;
+font-size: var(--h1-font-size);
 line-height: 1.1754;
 text-align: right;
 padding-left: 2.4vw;
@@ -30,7 +30,7 @@ margin: 0 0 4.4vh 0;
 }
 
 .home-info-text{
-font-size: min(max(14px,0.9375vw),0.9375vw);
+font-size: var(--body-text);
 line-height: 1.167;
 text-align: justify;
 margin: 0 0 4.4vh 0;
@@ -44,7 +44,7 @@ margin: 0 0 4.4vh 0;
 .home-info-link{
     font-family: var(--heading-font-family);
 font-weight: bold;
-font-size: min(max(14px,0.9375vw),0.9375vw);;
+font-size: var(--body-text);
 line-height: 1.18;
 text-align: center;
 border: 3px solid var(--primary-color);
@@ -57,3 +57,35 @@ color: var(--primary-color);
     background-color: var(--primary-color);
     margin-bottom: 18px;
 }
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  
+    .home-image{
+        width: 100vw;
+position: relative;
+height: 100%;
+z-index: -1;
+background: linear-gradient(rgba(24, 24, 24, 0.6), rgba(24, 24, 24, 0.6)) ,  url(../img/homeBg.jpg) center center;
+    }
+
+    .home-info-title{
+        padding-left: 0;
+    }
+
+    .home-main{
+        color: #FFFFFF;
+    }
+    .home-info{
+        top: 120px;
+        position: absolute;
+        padding: 8vh 9.5vw;
+    }
+
+    .home-info-link:last-of-type{ 
+        border-color: #FFFFFF ;
+        color: #FFFFFF;
+    }
+
+}
+
