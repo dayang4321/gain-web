@@ -109,6 +109,10 @@ ul {
   text-align: left;
 }
 
+.navbar .nav-item:first-child{
+  color: #F48120;
+}
+
 .dropbtn {
   background-color: transparent;
   border: none;
@@ -258,14 +262,10 @@ input[type="submit"] {
     --link-text: min(max(10px, 3.62vw), 16px);
   }
   
-
-
-
-
-
   .navbar{
-
-  }
+      padding: 3.24vh 4.79vw 4.167vh 6.6vw;
+    }
+    
   .navbar-brand {
     width: min(39.85vw, 200px);
     min-width: 140px;
@@ -337,7 +337,9 @@ input[type="text"], input[type="password"], input[type="tel"], textarea, select 
 
  /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
-  
+  .navbar{
+    padding: 3.24vh 2.79vw 4.167vh 4.6vw;
+  }
 }
 
 /* Large devices (desktops, less than 1200px)*/
