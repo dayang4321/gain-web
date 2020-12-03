@@ -165,6 +165,24 @@ margin: 5vh 0 4vh;
   transform: rotate(45deg);
 }
 
+.currency-group{
+  display: flex;
+  justify-content: start;  
+}
+
+.currency-group > input{
+  display: inline-block;
+  width: 65%;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin-right: 0.3vw;
+}
+.currency-group > select{
+  display: inline-block;
+  width: 30%;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
 .privacy-check{
   display: flex;
   flex-direction: column;

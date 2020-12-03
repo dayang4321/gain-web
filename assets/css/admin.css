@@ -16,7 +16,8 @@
 
 #adminLoginForm input[type="text"],
 #adminLoginForm input[type="password"],
-#adminLoginForm input[type="tel"] {
+#adminLoginForm input[type="tel"],
+#adminLoginForm input[type="number"] {
   max-width: unset;
 }
 

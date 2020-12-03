@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/assistance.css" />   
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/assistance.css" />
     <title>Request Assistance</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-md" aria-label="Main Navigation">         
-                <a  href="#" class="navbar-brand">
-                 <img class="navbar-logo" src="../assets/img/svg/mainLogo.svg" alt="logo"/>
-                </a>
-             
-                  <button class="custom-toggler navbar-toggler" type="button"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                
-          
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav-items navbar-nav">
-                <li class="nav-item">
-                    <a href="../admin/login/">LOGIN</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../maps/">TECHNICAL ASSISTANCE MAP</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../assistance/">REQUEST ASSISTANCE</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../">BACK TO MAIN SITE</a>
-                </li>
-                <!-- <li class="nav-item navbar-dropdown">
+      <nav class="navbar navbar-expand-md" aria-label="Main Navigation">
+        <a href="#" class="navbar-brand">
+          <img
+            class="navbar-logo"
+            src="../assets/img/svg/mainLogo.svg"
+            alt="logo"
+          />
+        </a>
+
+        <button
+          class="custom-toggler navbar-toggler"
+          type="button"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav-items navbar-nav">
+            <li class="nav-item">
+              <a href="../admin/login/">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <a href="../maps/">TECHNICAL ASSISTANCE MAP</a>
+            </li>
+            <li class="nav-item">
+              <a href="../assistance/">REQUEST ASSISTANCE</a>
+            </li>
+            <li class="nav-item">
+              <a href="../">BACK TO MAIN SITE</a>
+            </li>
+            <!-- <li class="nav-item navbar-dropdown">
                     <button type="button" data-lang="en-gb" class="dropbtn" aria-expanded="false" aria-controls="langDropdown">
                       EN
                     </button>
@@ -44,147 +58,212 @@
                       <li><a href="#" data-lang="en-es" >ES</a></li>
                     </ul>
                   </li> -->
-            </ul>
-            </div>
-        </nav>
-       
+          </ul>
+        </div>
+      </nav>
     </header>
     <main class="assistance-main">
-        <div class="assistance-content">
-            <h1 class="assistance-title">Creating easy access to technical assistance</h1>
-            <h4 class="assistance-small-title">Kindly fill the details below </h4>
-            <form id="assistanceForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="companyName">NAME OF COMPANY</label>
-                        <input name="companyName" id="companyName" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="companyName">COMPANY WEBSITE</label>
-                        <input name="companyName" id="companyWebsite" type="text"/>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="country">COUNTRY</label>
-                        <select name="country" id="country" type="text">
-                            <option value=""></option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="city">CITY</label>
-                        <input name="city" id="city" type="text"/>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="employeeCount">NUMBER OF EMPLOYEES</label>
-                        <input name="employeeCount" id="employeeCount" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="annualProfit">ANNUAL PROFIT (INDICATE CURRENCY)</label>
-                        <input name="annualProfit" id="annualProfit" type="text"/>
-                    </div>
-                </div>
-
-                <h2 class="assistance-light-title">Contact person for B2B TA request</h2>
-    
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="contactName">NAME</label>
-                        <input name="contactName" id="contactName" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="contactTitle">TITLE</label>
-                        <input name="contactTitle" id="contactTitle" type="text"/>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="contactEmail">EMAIL</label>
-                        <input name="contactEmail" id="contactEmail" type="text" />
-                    </div>
-                    <div class="form-group">
-                        <label for="contactWhatsapp">WHATSAPP NUMBER</label>
-                        <input name="contactWhatsapp" id="contactWhatsapp" type="text"/>
-                    </div>
-                </div>
-    
-                <h2 class="assistance-light-title">Technical Assisstance</h2>
-                <div class="form-group">
-                    <label for="assistanceNeed">Technical assistance needs of your company (select only one category):</label>
-                    <input name="assistanceNeed" id="assistanceNeed" type="text" />
-                </div>
-    
-                <div class="form-group">
-                    <label for="requestDescription">DETAILED DESCRIPTION OF REQUEST</label>
-                    <textarea name="requestDescription" rows="10" id="requestDescription" type="text">
-                                        </textarea>
-                </div>
-    
-                <div class="form-group">
-                    <label for="productsSold">WHAT PRODUCTS ARE YOU CURRENTLY SELLING</label>
-                    <textarea name="productsSold" rows="10" id="productsSold" type="text">
-                                        </textarea>
-                </div>
-    
-                <div class="form-group">
-                    <label for="existingCustomers">WHO ARE YOUR EXISTING CUSTOMERS</label>
-                    <textarea name="existingCustomers" rows="10" id="existingCustomers" type="text">
-                                        </textarea>
-                </div>
-    
-                <div class="form-row">
-                    <div class="form-group privacy-check">
-                        <label class="control control--checkbox">I agree to the SBN privacy policy
-                            <input type="checkbox"/>
-                            <div class="control__indicator"></div>
-                          </label>
-                          <a href="../../privacy-policy/" class="privacy-link">Click to view privacy policy</a>
-                    </div>
-                    <input type="submit" class="submit-btn" id="assistanceSubmit" />
-                </div>
-              
-    
-            </form>
-        </div>
-     
-    </main>
-    <div class="modal fade" id="successMsg" tabindex="-1" role="dialog" aria-labelledby="important-msg-label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <div class="assistance-content">
+        <h1 class="assistance-title">
+          Creating easy access to technical assistance
+        </h1>
+        <h4 class="assistance-small-title">Kindly fill the details below</h4>
+        <form id="assistanceForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="companyName">NAME OF COMPANY</label>
+              <input name="companyName" id="companyName" type="text" />
             </div>
-            <div class="modal-body">
-              <h1 class="modal-title">This request is being processed</h1>
-              <p class="modal-text">You would be notified once your request is approved or assigned.</p>
-            </div>           
+            <div class="form-group">
+              <label for="companyName">COMPANY WEBSITE</label>
+              <input name="companyName" id="companyWebsite" type="text" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="country">COUNTRY</label>
+              <select name="country" id="country" type="text">
+                <option value=""></option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="city">CITY</label>
+              <input name="city" id="city" type="text" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="employeeCount">NUMBER OF EMPLOYEES </label>
+              <input name="employeeCount" id="employeeCount" type="text" />
+            </div>
+
+            <div class="form-group">
+              <label for="annualProfit"
+                >ANNUAL PROFIT (INDICATE CURRENCY)</label
+              >
+              <div class="currency-group">
+                <input
+                  name="annualProfit"
+                  id="annualProfit"
+                  type="number"
+                  min="0"
+                  step="any"
+                />
+                <select name="currency" id="currency" type="text"></select>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="assistance-light-title">
+            Contact person for B2B TA request
+          </h2>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">NAME</label>
+              <input name="contactName" id="contactName" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="contactTitle">TITLE</label>
+              <input name="contactTitle" id="contactTitle" type="text" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactEmail">EMAIL</label>
+              <input name="contactEmail" id="contactEmail" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="contactWhatsapp">WHATSAPP NUMBER</label>
+              <input name="contactWhatsapp" id="contactWhatsapp" type="text" />
+            </div>
+          </div>
+
+          <h2 class="assistance-light-title">Technical Assisstance</h2>
+          <div class="form-group">
+            <label for="assistanceNeed"
+              >Technical assistance needs of your company (select only one
+              category):</label
+            >
+            <input name="assistanceNeed" id="assistanceNeed" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="requestDescription"
+              >DETAILED DESCRIPTION OF REQUEST</label
+            >
+            <textarea
+              name="requestDescription"
+              rows="10"
+              id="requestDescription"
+              type="text"
+            >
+            </textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="productsSold"
+              >WHAT PRODUCTS ARE YOU CURRENTLY SELLING</label
+            >
+            <textarea
+              name="productsSold"
+              rows="10"
+              id="productsSold"
+              type="text"
+            >
+            </textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="existingCustomers"
+              >WHO ARE YOUR EXISTING CUSTOMERS</label
+            >
+            <textarea
+              name="existingCustomers"
+              rows="10"
+              id="existingCustomers"
+              type="text"
+            >
+            </textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group privacy-check">
+              <label class="control control--checkbox"
+                >I agree to the SBN privacy policy &amp;#36;
+                <input type="checkbox" />
+                <div class="control__indicator"></div>
+              </label>
+              <a href="../../privacy-policy/" class="privacy-link"
+                >Click to view privacy policy</a
+              >
+            </div>
+            <input type="submit" class="submit-btn" id="assistanceSubmit" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <div
+      class="modal fade"
+      id="successMsg"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="important-msg-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span
+              ><span class="sr-only">Close</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h1 class="modal-title">This request is being processed</h1>
+            <p class="modal-text">
+              You would be notified once your request is approved or assigned.
+            </p>
           </div>
         </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="../assets/js/script.js"></script>
-      <script>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    <script>
+      $("#assistanceSubmit").click((event) => {
+        event.preventDefault();
+        $("#successMsg").modal("show");
+      });
 
+    const sunCountries=[{countryCode:"af",countryName:"Afghanistan"},{countryCode:"bd",countryName:"Bangladesh"},{countryCode:"bj",countryName:"Benin"},{countryCode:"bw",countryName:"Botswana"},{countryCode:"bf",countryName:"Burkina Faso"},{countryCode:"bi",countryName:"Burundi"},{countryCode:"kh",countryName:"Cambodia"},{countryCode:"cm",countryName:"Cameroon"},{countryCode:"cf",countryName:"Central African Republic"},{countryCode:"td",countryName:"Chad"},{countryCode:"km",countryName:"Comoros"},{countryCode:"cg",countryName:"Congo"},{countryCode:"ci",countryName:"Côte d'Ivoire"},{countryCode:"cd",countryName:"Democratic Republic of Congo"},{countryCode:"et",countryName:"Ethiopia"},{countryCode:"ga",countryName:"Gabon"},{countryCode:"gh",countryName:"Ghana"},{countryCode:"gn",countryName:"Guinea"},{countryCode:"gw",countryName:"Guinea-Bissau"},{countryCode:"id",countryName:"Indonesia"},{countryCode:"ke",countryName:"Kenya"},{countryCode:"kg",countryName:"Kyrgyzstan"},{countryCode:"la",countryName:"Laos"},{countryCode:"ls",countryName:"Lesotho"},{countryCode:"lr",countryName:"Liberia"},{countryCode:"mg",countryName:"Madagascar"},{countryCode:"mw",countryName:"Malawi"},{countryCode:"ml",countryName:"Mali"},{countryCode:"mr",countryName:"Mauritania"},{countryCode:"mz",countryName:"Mozambique"},{countryCode:"mm",countryName:"Myanmar"},{countryCode:"na",countryName:"Namibia"},{countryCode:"np",countryName:"Nepal"},{countryCode:"ne",countryName:"Niger"},{countryCode:"ng",countryName:"Nigeria"},{countryCode:"ph",countryName:"Pakistan"},{countryCode:"pk",countryName:"Pakistan"},{countryCode:"pe",countryName:"Peru"},{countryCode:"rw",countryName:"Rwanda"},{countryCode:"sn",countryName:"Senegal"},{countryCode:"sl",countryName:"Sierra Leone"},{countryCode:"so",countryName:"Somalia"},{countryCode:"ss",countryName:"South Sudan"},{countryCode:"lk",countryName:"Sri Lanka"},{countryCode:"sd",countryName:"Sudan"},{countryCode:"sz",countryName:"Swaziland"},{countryCode:"tj",countryName:"Tajikistan"},{countryCode:"tz",countryName:"Tanzania"},{countryCode:"gm",countryName:"The Gambia"},{countryCode:"tg",countryName:"Togo"},{countryCode:"ug",countryName:"Uganda"},{countryCode:"vn",countryName:"Vietnam"},{countryCode:"ye",countryName:"Yemen"},{countryCode:"zm",countryName:"Zambia"},{countryCode:"zw",countryName:"Zimbabwe"}];
+   
+      const currencies=[{countryCode:"USD",symbol:"&#36;"},{countryCode:"EUR",symbol:"&#8364;"},{countryCode:"AFN",symbol:"&#1547;"},{countryCode:"AZN",symbol:"&#8380;"},{countryCode:"BDT",symbol:"&#2547;"},{countryCode:"BWP",symbol:"&#80;"},{countryCode:"KHR",symbol:"&#6107;"},{countryCode:"COP",symbol:"&#36;"},{countryCode:"CRC",symbol:"&#8353;"},{countryCode:"GHC",symbol:"&#71;&#72;&#162;"},{countryCode:"GTQ",symbol:"&#81;"},{countryCode:"HNL",symbol:"&#76;"},{countryCode:"IDR",symbol:"&#82;&#112;"},{countryCode:"IRR",symbol:"&#65020;"},{countryCode:"KZT",symbol:"&#8376;"},{countryCode:"KGS",symbol:"&#1083;&#1074;"},{countryCode:"LAK",symbol:"&#8365;"},{countryCode:"LBP",symbol:"&#76;&#163;"},{countryCode:"LRD",symbol:"&#76;&#68;&#36;"},{countryCode:"MYR",symbol:"&#82;&#77;"},{countryCode:"MUR",symbol:"&#82;&#115;"},{countryCode:"MXN",symbol:"&#77;&#101;&#120;&#36;"},{countryCode:"MZN",symbol:"&#77;&#84;"},{countryCode:"NAD",symbol:"&#78;&#36;"},{countryCode:"NPR",symbol:"&#82;&#115;&#46;"},{countryCode:"ANG",symbol:"&#402;"},{countryCode:"NGN",symbol:"&#8358;"},{countryCode:"PKR",symbol:"&#82;&#115;"},{countryCode:"PEN",symbol:"&#83;&#47;&#46;"},{countryCode:"PHP",symbol:"&#8369;"},{countryCode:"SOS",symbol:"&#83;&#104;&#46;&#83;&#111;"},{countryCode:"ZAR",symbol:"&#82;"},{countryCode:"LKR",symbol:"&#82;&#115;"},{countryCode:"SEK",symbol:"&#107;&#114;"},{countryCode:"SYP",symbol:"&#163;&#83;"},{countryCode:"TWD",symbol:"&#78;&#84;&#36;"},{countryCode:"THB",symbol:"&#3647;"},{countryCode:"GBP",symbol:"&#163;"},{countryCode:"UGX",symbol:"&#85;&#83;&#104;"},{countryCode:"UYU",symbol:"&#36;&#85;"},{countryCode:"UZS",symbol:"&#1083;&#1074;"},{countryCode:"VND",symbol:"&#8363;"},{countryCode:"VND",symbol:"&#65020;"},{countryCode:"ZWD",symbol:"&#90;&#36;"}];
 
-          $('#assistanceSubmit').click((event)=>{
-              event.preventDefault();
-       $('#successMsg').modal('show');
-       
-          })
+      const countryOptions = sunCountries.map((country) => {
+        return `<option value=${country.countryCode}>${country.countryName}</option>`;
+      });
 
-  const sunCountries=[{countryCode:"af",countryName:"Afghanistan"},{countryCode:"bd",countryName:"Bangladesh"},{countryCode:"bj",countryName:"Benin"},{countryCode:"bw",countryName:"Botswana"},{countryCode:"bf",countryName:"Burkina Faso"},{countryCode:"bi",countryName:"Burundi"},{countryCode:"kh",countryName:"Cambodia"},{countryCode:"cm",countryName:"Cameroon"},{countryCode:"cf",countryName:"Central African Republic"},{countryCode:"td",countryName:"Chad"},{countryCode:"km",countryName:"Comoros"},{countryCode:"cg",countryName:"Congo"},{countryCode:"ci",countryName:"Côte d'Ivoire"},{countryCode:"cd",countryName:"Democratic Republic of Congo"},{countryCode:"et",countryName:"Ethiopia"},{countryCode:"ga",countryName:"Gabon"},{countryCode:"gh",countryName:"Ghana"},{countryCode:"gn",countryName:"Guinea"},{countryCode:"gw",countryName:"Guinea-Bissau"},{countryCode:"id",countryName:"Indonesia"},{countryCode:"ke",countryName:"Kenya"},{countryCode:"kg",countryName:"Kyrgyzstan"},{countryCode:"la",countryName:"Laos"},{countryCode:"ls",countryName:"Lesotho"},{countryCode:"lr",countryName:"Liberia"},{countryCode:"mg",countryName:"Madagascar"},{countryCode:"mw",countryName:"Malawi"},{countryCode:"ml",countryName:"Mali"},{countryCode:"mr",countryName:"Mauritania"},{countryCode:"mz",countryName:"Mozambique"},{countryCode:"mm",countryName:"Myanmar"},{countryCode:"na",countryName:"Namibia"},{countryCode:"np",countryName:"Nepal"},{countryCode:"ne",countryName:"Niger"},{countryCode:"ng",countryName:"Nigeria"},{countryCode:"ph",countryName:"Pakistan"},{countryCode:"pk",countryName:"Pakistan"},{countryCode:"pe",countryName:"Peru"},{countryCode:"rw",countryName:"Rwanda"},{countryCode:"sn",countryName:"Senegal"},{countryCode:"sl",countryName:"Sierra Leone"},{countryCode:"so",countryName:"Somalia"},{countryCode:"ss",countryName:"South Sudan"},{countryCode:"lk",countryName:"Sri Lanka"},{countryCode:"sd",countryName:"Sudan"},{countryCode:"sz",countryName:"Swaziland"},{countryCode:"tj",countryName:"Tajikistan"},{countryCode:"tz",countryName:"Tanzania"},{countryCode:"gm",countryName:"The Gambia"},{countryCode:"tg",countryName:"Togo"},{countryCode:"ug",countryName:"Uganda"},{countryCode:"vn",countryName:"Vietnam"},{countryCode:"ye",countryName:"Yemen"},{countryCode:"zm",countryName:"Zambia"},{countryCode:"zw",countryName:"Zimbabwe"}];
-     
-  const countryOptions = sunCountries.map((country)=>{
-      return `<option value=${country.countryCode}>${country.countryName}</option>`
-  })
-     
-  $('#country').append(...countryOptions);
-     
-     </script>
-</body>
+      const currencyOptions = currencies.map((currency) => {
+        return `<option value=${currency.countryCode}>${currency.symbol} - ${currency.countryCode}</option>`
+      });
+
+      $("#country").append(...countryOptions);
+      $("#currency").append(...currencyOptions);
+    </script>
+  </body>
 </html>
