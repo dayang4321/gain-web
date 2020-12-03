@@ -206,6 +206,8 @@ select {
   background-position: 95% 55%;
   background-repeat: no-repeat;
   background-size: 5%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 option {
