@@ -83,7 +83,7 @@
             <div class="form-group">
               <label for="country">COUNTRY</label>
               <select name="country" id="country" type="text">
-                <option value=""></option>
+                <option value="" disabled selected></option>
               </select>
             </div>
             <div class="form-group">
@@ -99,11 +99,12 @@
 
             <div class="form-group">
               <label for="annualProfit"
-                >ANNUAL PROFIT (INDICATE CURRENCY)</label
-              >
+                >ANNUAL PROFIT (INDICATE CURRENCY)</label>
               <div class="currency-group">
                 <input name="annualProfit" id="annualProfit" type="number" min="0" step="any"/>
-                <select name="currency" id="currency" type="text"></select>
+                <select name="currency" id="currency" type="text">
+                    <option value="" disabled selected></option>
+                </select>
               </div>
             </div>
           </div>
@@ -135,23 +136,24 @@
 
           <h2 class="assistance-light-title">Technical Assistance</h2>
           <div class="form-group">
-            <label for="assistanceNeed"
-              >Technical assistance needs of your company (select only one
-              category):</label
-            >
-            <input name="assistanceNeed" id="assistanceNeed" type="text" />
+            <label for="assistanceNeed">Technical assistance needs of your company (select only one category):</label>
+           
+            <select name="assistanceNeed" id="assistanceNeed">
+                <option value="" disabled selected></option>
+                <option value="Fortification">Fortification</option>
+                <option value="Product reformulation">Product reformulation</option>
+                <option value="Food safety">Food safety</option>
+                <option value="Nutrition labelling">Nutrition labelling</option>
+                <option value="Affordability">Affordability</option>
+                <option value="Fortification">Financial inclusion</option>
+                <option value="Fortification">Marketing</option>
+                <option value="Fortification">Other</option>
+              </select>            
           </div>
 
           <div class="form-group">
-            <label for="requestDescription"
-              >DETAILED DESCRIPTION OF REQUEST</label
-            >
-            <textarea
-              name="requestDescription"
-              rows="10"
-              id="requestDescription"
-              type="text"
-            >
+            <label for="requestDescription">DETAILED DESCRIPTION OF REQUEST</label>
+            <textarea name="requestDescription" rows="10" id="requestDescription" type="text">
             </textarea>
           </div>
 
