@@ -6,11 +6,22 @@
 function padder() {
   $('main').css({ paddingTop: $('.navbar').innerHeight() });
 }
+$('body').append("<div class='backdrop'></div>")
+$('.backdrop').click(function (e) {
+  $('.backdrop').fadeOut(100);
+  $("#navbarSupportedContent").toggleClass("show");
+})
+
 
 $('.custom-toggler').click(function () {
-   // console.log('clicked')
-   $("#navbarSupportedContent").toggleClass("show");
-  })
+  // console.log('clicked')
+  $('.backdrop').fadeToggle(100)
+  $("#navbarSupportedContent").toggleClass("show");
+  // Close the dropdown if the user clicks outside of it
+})
+
+
+
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
