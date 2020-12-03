@@ -24,7 +24,7 @@ var data = [
   // ['my', 18],
   // ['az', 19],
   // ['am', 20],
-  // ['vn', 21],  //Vietnam
+   ['vn', 21],  //Vietnam
      ['tj', 22], //Tajikistan
   // ['uz', 23],
   // ['tl', 24],

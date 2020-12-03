@@ -67,7 +67,9 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="country">COUNTRY</label>
-                        <input name="country" id="country" type="text" />
+                        <select name="country" id="country" type="text">
+                            <option value=""></option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="city">CITY</label>
@@ -174,6 +176,15 @@
        $('#successMsg').modal('show');
        
           })
-      </script>
+
+  const sunCountries=[{countryCode:"af",countryName:"Afghanistan"},{countryCode:"bd",countryName:"Bangladesh"},{countryCode:"bj",countryName:"Benin"},{countryCode:"bw",countryName:"Botswana"},{countryCode:"bf",countryName:"Burkina Faso"},{countryCode:"bi",countryName:"Burundi"},{countryCode:"kh",countryName:"Cambodia"},{countryCode:"cm",countryName:"Cameroon"},{countryCode:"cf",countryName:"Central African Republic"},{countryCode:"td",countryName:"Chad"},{countryCode:"km",countryName:"Comoros"},{countryCode:"cg",countryName:"Congo"},{countryCode:"ci",countryName:"Côte d'Ivoire"},{countryCode:"cd",countryName:"Democratic Republic of Congo"},{countryCode:"et",countryName:"Ethiopia"},{countryCode:"ga",countryName:"Gabon"},{countryCode:"gh",countryName:"Ghana"},{countryCode:"gn",countryName:"Guinea"},{countryCode:"gw",countryName:"Guinea-Bissau"},{countryCode:"id",countryName:"Indonesia"},{countryCode:"ke",countryName:"Kenya"},{countryCode:"kg",countryName:"Kyrgyzstan"},{countryCode:"la",countryName:"Laos"},{countryCode:"ls",countryName:"Lesotho"},{countryCode:"lr",countryName:"Liberia"},{countryCode:"mg",countryName:"Madagascar"},{countryCode:"mw",countryName:"Malawi"},{countryCode:"ml",countryName:"Mali"},{countryCode:"mr",countryName:"Mauritania"},{countryCode:"mz",countryName:"Mozambique"},{countryCode:"mm",countryName:"Myanmar"},{countryCode:"na",countryName:"Namibia"},{countryCode:"np",countryName:"Nepal"},{countryCode:"ne",countryName:"Niger"},{countryCode:"ng",countryName:"Nigeria"},{countryCode:"ph",countryName:"Pakistan"},{countryCode:"pk",countryName:"Pakistan"},{countryCode:"pe",countryName:"Peru"},{countryCode:"rw",countryName:"Rwanda"},{countryCode:"sn",countryName:"Senegal"},{countryCode:"sl",countryName:"Sierra Leone"},{countryCode:"so",countryName:"Somalia"},{countryCode:"ss",countryName:"South Sudan"},{countryCode:"lk",countryName:"Sri Lanka"},{countryCode:"sd",countryName:"Sudan"},{countryCode:"sz",countryName:"Swaziland"},{countryCode:"tj",countryName:"Tajikistan"},{countryCode:"tz",countryName:"Tanzania"},{countryCode:"gm",countryName:"The Gambia"},{countryCode:"tg",countryName:"Togo"},{countryCode:"ug",countryName:"Uganda"},{countryCode:"vn",countryName:"Vietnam"},{countryCode:"ye",countryName:"Yemen"},{countryCode:"zm",countryName:"Zambia"},{countryCode:"zw",countryName:"Zimbabwe"}];
+     
+  const countryOptions = sunCountries.map((country)=>{
+      return `<option value=${country.countryCode}>${country.countryName}</option>`
+  })
+     
+  $('#country').append(...countryOptions);
+     
+     </script>
 </body>
 </html>
