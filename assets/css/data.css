@@ -20,7 +20,7 @@ html {
     display: none;
 }
 .side-nav {
-  min-width: 14.79vw;
+max-width: max(14.79vw,150px);
   box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.13);
   display: flex;
   flex-direction: column;
@@ -62,11 +62,11 @@ html {
 }
 
 #container {
-    max-height: 80%;
-    min-width: 85vw;
+    max-height: 80vh;
     margin: 0 auto;
     position: relative;
     top:0;
+    flex: 0.7;
 }
 
 .highcharts-container{
