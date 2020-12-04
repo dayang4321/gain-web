@@ -243,13 +243,13 @@
   border-radius: 10px;
 }
 
-#createUserForm .control--checkbox .control__indicator:after {
-  left: 36%;
-    top: 15%;
-    width: 0.6vw;
-    height: 2.2vh;
+#createUserForm  .control--checkbox .control__indicator:after {
+  left: 33%;
+  top: 10%;
+  width: 0.6vw;
+  height: 2vh;
   border: solid #fff;
-  border-width: 0 0.26vw 0.26vw 0;
+  border-width: 0 max(0.26vw,3px) max(0.26vw,3px) 0;
   transform: rotate(45deg);
 }
 
@@ -379,6 +379,18 @@ margin-left: 1.5vw;
   background-color: #B32037;  
 }
 
+
+@media (max-width: 991.98px) { 
+  #createUserForm .control--checkbox .control__indicator:after {
+    left: 35%;
+    top: 0%;
+    width: max(1vw,7px);
+    height: max(1.7vh,10px);
+  }
+ }
+
+
+
 @media (max-width: 767.98px) {   
 
   .admin .home-info{
@@ -467,4 +479,7 @@ color: #FFFFFF;
   font-size: var(--body-text);
 }
 
+#createUserForm .control--checkbox .control__indicator:after {
+  top: 16%;
+}
 }

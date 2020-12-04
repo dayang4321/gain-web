@@ -49,6 +49,7 @@
   color: white;
   font-family: var(--heading-font-family);
   width: 30vw;
+  min-width: 380px;
   padding: 8vh 4.2vw;
   text-align: center;
 }
