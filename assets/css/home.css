@@ -18,6 +18,9 @@ height: 100vh;
 
 .home-info{
     padding: 14vh 11vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .home-info-title{
