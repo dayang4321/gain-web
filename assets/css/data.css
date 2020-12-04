@@ -235,7 +235,7 @@ input.pop-search:focus{
     font-size: var(--body-text);
     line-height: 1.167;    
     color: #FFFFFF;
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: none;
     margin: 0 10px;
     padding: 1.8vh 0.4vw 1vw  ;
 }
@@ -265,6 +265,10 @@ input.pop-search:focus{
 
 .pop-info:first-of-type{
     border-radius: 10px 10px 0px 0px;
+}
+
+.pop-box:nth-of-type(2n+1) {
+    background-color: #4E4E4E;
 }
 
 .pop-info:nth-of-type(2n+1) {
