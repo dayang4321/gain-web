@@ -224,8 +224,7 @@ input.pop-search:focus{
 }
 
 .pop-svg{
-    max-width: 4.22vw;
-    min-width: 41px;
+    min-width: max(41px,3.4vw);
 }
 .pop-box:first-of-type{
     margin-top: 7vh;
@@ -249,6 +248,12 @@ input.pop-search:focus{
     margin-top: 1vh;
 }
 
+.pop-block>div:last-child{
+    display: flex;
+    margin-left: -3.425vw;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
 .pop-info{
     display: flex;
@@ -310,6 +315,15 @@ font-style: italic;
 font-weight: bold;
 font-size: var(--body-text);
 text-align: right;
+}
+
+.edit-btn{
+    margin-right: 1.49vw;
+}
+
+.edit-btn>img{
+    width: 1.77vw;
+    min-width: 20px;
 }
 
 .pop-info-btn{

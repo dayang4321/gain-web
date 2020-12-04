@@ -175,86 +175,86 @@ var chart = Highcharts.mapChart("container", {
             // country = this;
             // console.log(country);
             instance.forEach((ins) =>
-              ins.setContent(
-                `<div class="popover-content">
-                <button type="button" class="close">
-                <span aria-hidden="true">&times;</span
-                ><span class="sr-only">Close</span>
-                </button>
-                    <h1 class="country-title">${this.name}</h1>
-                  
-                    <div class="pop-scrollable admin">
-                        <div class="pop-info">
-                            <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
-                            <div>
-                                <div class="pop-info-title" data-status=1 ><span>Fortification</span> <span>Ongoing (SBN)</span> </div>
-                                <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
-                                etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
-                                </p>
-                                <p class="pop-summary-location">Lagos, Nigeria</p>
-                                <button class="pop-info-btn"  data-toggle="modal" data-target="#requestModal"></button>
-                            </div>
-                        </div>
-                        <div class="pop-info">
-                            <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
-                            <div>
-                                <div class="pop-info-title" data-status=2 ><span>Finacial Inclusion</span> <span>Completed</span> </div>
-                                <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
-                                etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
-                                </p>
-                                <p class="pop-summary-location">Port Harcourt, Nigeria</p>
-                                <button class="pop-info-btn" data-toggle="modal" data-target="#requestModal"></button>
-                            </div>
-                        </div>
-                        <div class="pop-info">
-                            <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
-                            <div>
-                                <div class="pop-info-title" data-status=1><span>Product Reformation</span> <span >Ongoing (GAIN)</span> </div>
-                                <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
-                                etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
-                                </p>
-                                <p class="pop-summary-location">Benin, Nigeria</p>
-                                <button class="pop-info-btn" data-toggle="modal" data-target="#requestModal"></button>
-                            </div>
-                        </div>
-                        <div class="pop-info">
-                            <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
-                            <div>
-                                <div class="pop-info-title" data-status=2 ><span>Tax Consultancy</span> <span>Completed</span> </div>
-                                <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
-                                etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
-                                </p>
-                                <p class="pop-summary-location">Abuja, Nigeria</p>
-                                <button class="pop-info-btn"></button>
-                            </div>
-                        </div>
-                        <div class="pop-info">
-                            <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
-                            <div>
-                                <div class="pop-info-title" data-status=3 ><span>Tax Consultancy</span> <span>Requested</span> </div>
-                                <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
-                                etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
-                                </p>
-                                <p class="pop-summary-location">Abuja, Nigeria</p>
-                                <button class="pop-info-btn"></button>
-                            </div>
-                        </div>
-                        <div class="pop-info">
-                            <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
-                            <div>
-                                <div class="pop-info-title" data-status=3 ><span>Tax Consultancy</span> <span>Requested</span> </div>
-                                <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
-                                etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
-                                </p>
-                                <p class="pop-summary-location">Abuja, Nigeria</p>
-                                <button class="pop-info-btn"></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pop-footer">Scroll to see more</div>
-                </div>`
-              )
-            );
+            ins.setContent(
+              `<div class="popover-content">
+              <button type="button" class="close">
+              <span aria-hidden="true">&times;</span
+              ><span class="sr-only">Close</span>
+              </button>
+                  <h1 class="country-title">${this.name}</h1>
+                
+                  <div class="pop-scrollable admin">
+                      <div class="pop-info">
+                          <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
+                          <div class="pop-block">
+                              <div class="pop-info-title" data-status=1 ><span>Fortification</span> <span>Ongoing (SBN)</span> </div>
+                              <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
+                              etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
+                              </p>
+                              <p class="pop-summary-location">Lagos, Nigeria</p>
+                           <div> <a class='edit-btn' href="/admin/edit-request"><img src='../../../assets/img/svg/edit-btn.svg' alt="edit"></a>  <button class="pop-info-btn"  data-toggle="modal" data-target="#requestModal"></button> </div>
+                          </div>
+                      </div>
+                      <div class="pop-info">
+                          <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
+                          <div class="pop-block">
+                              <div class="pop-info-title" data-status=2 ><span>Finacial Inclusion</span> <span>Completed</span> </div>
+                              <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
+                              etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
+                              </p>
+                              <p class="pop-summary-location">Port Harcourt, Nigeria</p>
+                              <div> <a class='edit-btn' href="/admin/edit-request"><img src='../../../assets/img/svg/edit-btn.svg' alt="edit"></a> <button class="pop-info-btn" data-toggle="modal" data-target="#requestModal"></button> </div>
+                          </div>
+                      </div>
+                      <div class="pop-info">
+                          <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
+                          <div class="pop-block">
+                              <div class="pop-info-title" data-status=1><span>Product Reformation</span> <span >Ongoing (GAIN)</span> </div>
+                              <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
+                              etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
+                              </p>
+                              <p class="pop-summary-location">Benin, Nigeria</p>
+                               <div> <a class='edit-btn' href="/admin/edit-request"><img src='../../../assets/img/svg/edit-btn.svg' alt="edit"></a> <button class="pop-info-btn" data-toggle="modal" data-target="#requestModal"></button></div>
+                          </div>
+                      </div>
+                      <div class="pop-info">
+                          <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
+                          <div class="pop-block">
+                              <div class="pop-info-title" data-status=2 ><span>Tax Consultancy</span> <span>Completed</span> </div>
+                              <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
+                              etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
+                              </p>
+                              <p class="pop-summary-location">Abuja, Nigeria</p>
+                               <div> <a class='edit-btn' href="/admin/edit-request"><img src='../../../assets/img/svg/edit-btn.svg' alt="edit"></a> <button class="pop-info-btn"></button></div>
+                          </div>
+                      </div>
+                      <div class="pop-info">
+                          <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
+                          <div class="pop-block">
+                              <div class="pop-info-title" data-status=3 ><span>Tax Consultancy</span> <span>Requested</span> </div>
+                              <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
+                              etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
+                              </p>
+                              <p class="pop-summary-location">Abuja, Nigeria</p>
+                               <div> <a class='edit-btn' href="/admin/edit-request"><img src='../../../assets/img/svg/edit-btn.svg' alt="edit"></a> <button class="pop-info-btn"></button></div>
+                          </div>
+                      </div>
+                      <div class="pop-info">
+                          <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
+                          <div class="pop-block">
+                              <div class="pop-info-title" data-status=3 ><span>Tax Consultancy</span> <span>Requested</span> </div>
+                              <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
+                              etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
+                              </p>
+                              <p class="pop-summary-location">Abuja, Nigeria</p>
+                               <div> <a class='edit-btn' href="/admin/edit-request"><img src='../../../assets/img/svg/edit-btn.svg' alt="edit"></a> <button class="pop-info-btn"></button></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="pop-footer">Scroll to see more</div>
+              </div>`
+            )
+          );
             $('.popover-content .close').click(function(){
               //  instance.hide()
                 instance.forEach((ins) => {

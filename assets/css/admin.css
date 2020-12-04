@@ -304,13 +304,14 @@ margin-top: 4vh;
   border-radius: 19px;
   color: white;
   font-family: var(--body-font-family);
-  width: max(58vw, 450px);
+  width: max(58vw, 550px);
   padding: 4vh 4.2vw;
   margin: auto;
   text-align: left;
 }
 #requestModal .modal-dialog{
   width:unset;
+  min-width: 100vw;
 }
 
 #requestModal .close{

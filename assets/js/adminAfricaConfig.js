@@ -190,68 +190,68 @@ var chart = Highcharts.mapChart("container", {
                     <div class="pop-scrollable admin">
                         <div class="pop-info">
                             <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
-                            <div>
+                            <div class="pop-block">
                                 <div class="pop-info-title" data-status=1 ><span>Fortification</span> <span>Ongoing (SBN)</span> </div>
                                 <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
                                 etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
                                 </p>
                                 <p class="pop-summary-location">Lagos, Nigeria</p>
-                                <button class="pop-info-btn"  data-toggle="modal" data-target="#requestModal"></button>
+                             <div> <a class='edit-btn' href="/admin/edit-request"><img src='../../../assets/img/svg/edit-btn.svg' alt="edit"></a>  <button class="pop-info-btn"  data-toggle="modal" data-target="#requestModal"></button> </div>
                             </div>
                         </div>
                         <div class="pop-info">
                             <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
-                            <div>
+                            <div class="pop-block">
                                 <div class="pop-info-title" data-status=2 ><span>Finacial Inclusion</span> <span>Completed</span> </div>
                                 <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
                                 etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
                                 </p>
                                 <p class="pop-summary-location">Port Harcourt, Nigeria</p>
-                                <button class="pop-info-btn" data-toggle="modal" data-target="#requestModal"></button>
+                                <div> <a class='edit-btn' href="/admin/edit-request"><img src='../../../assets/img/svg/edit-btn.svg' alt="edit"></a> <button class="pop-info-btn" data-toggle="modal" data-target="#requestModal"></button> </div>
                             </div>
                         </div>
                         <div class="pop-info">
                             <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
-                            <div>
+                            <div class="pop-block">
                                 <div class="pop-info-title" data-status=1><span>Product Reformation</span> <span >Ongoing (GAIN)</span> </div>
                                 <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
                                 etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
                                 </p>
                                 <p class="pop-summary-location">Benin, Nigeria</p>
-                                <button class="pop-info-btn" data-toggle="modal" data-target="#requestModal"></button>
+                                 <div> <a class='edit-btn' href="/admin/edit-request"><img src='../../../assets/img/svg/edit-btn.svg' alt="edit"></a> <button class="pop-info-btn" data-toggle="modal" data-target="#requestModal"></button></div>
                             </div>
                         </div>
                         <div class="pop-info">
                             <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
-                            <div>
+                            <div class="pop-block">
                                 <div class="pop-info-title" data-status=2 ><span>Tax Consultancy</span> <span>Completed</span> </div>
                                 <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
                                 etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
                                 </p>
                                 <p class="pop-summary-location">Abuja, Nigeria</p>
-                                <button class="pop-info-btn"></button>
+                                 <div> <a class='edit-btn' href="/admin/edit-request"><img src='../../../assets/img/svg/edit-btn.svg' alt="edit"></a> <button class="pop-info-btn"></button></div>
                             </div>
                         </div>
                         <div class="pop-info">
                             <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
-                            <div>
+                            <div class="pop-block">
                                 <div class="pop-info-title" data-status=3 ><span>Tax Consultancy</span> <span>Requested</span> </div>
                                 <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
                                 etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
                                 </p>
                                 <p class="pop-summary-location">Abuja, Nigeria</p>
-                                <button class="pop-info-btn"></button>
+                                 <div> <a class='edit-btn' href="/admin/edit-request"><img src='../../../assets/img/svg/edit-btn.svg' alt="edit"></a> <button class="pop-info-btn"></button></div>
                             </div>
                         </div>
                         <div class="pop-info">
                             <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />
-                            <div>
+                            <div class="pop-block">
                                 <div class="pop-info-title" data-status=3 ><span>Tax Consultancy</span> <span>Requested</span> </div>
                                 <p class="pop-summary">Lorem ipsum dolor sit amet, consect-
                                 etuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....
                                 </p>
                                 <p class="pop-summary-location">Abuja, Nigeria</p>
-                                <button class="pop-info-btn"></button>
+                                 <div> <a class='edit-btn' href="/admin/edit-request"><img src='../../../assets/img/svg/edit-btn.svg' alt="edit"></a> <button class="pop-info-btn"></button></div>
                             </div>
                         </div>
                     </div>
