@@ -348,14 +348,15 @@ margin-top:1.5vh ;
     color: #FFFFFF;
 }
 
-.pop-info-title[data-status="2"] ~ .pop-info-btn{
+.pop-info-title[data-status="2"] ~ div>.pop-info-btn,
+.pop-info-title[data-status="2"] ~ div>.edit-btn{
     display: none;
 }
 
-.pop-info-title[data-status="3"] ~ .pop-info-btn{
+.pop-info-title[data-status="3"] ~ div>.pop-info-btn{
     background-color: #127F3C;
 }
-.pop-info-title[data-status="3"] ~ .pop-info-btn::before{
+.pop-info-title[data-status="3"] ~ div>.pop-info-btn::before{
     content: 'Takeover Request';
 }
 
