@@ -12,15 +12,23 @@
 .maps-title{
     font-family: var(--heading-font-family);
     font-size: var(--h3-font-size);
-    margin-bottom: 3.89vh;
+    margin-bottom: 2.5vh;
     text-transform: uppercase;
+    font-weight: 700;
 }
+
+.maps-info-text{
+    font-size: var(--body-text);
+    line-height: 1.167;
+    text-align: justify;
+    margin: 0 0 4vh 0;
+    }
 
 .map-links{
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
-    padding-bottom:2vh ;
+    padding-bottom:3vh ;
 }
 
 .map-link {

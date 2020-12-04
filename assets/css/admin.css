@@ -8,6 +8,9 @@
 
 .admin .home-info {
   padding: 9vh 11vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .admin .home-info-text{
@@ -69,7 +72,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8.518vh;
+  margin-bottom: 3.518vh;
   margin-right: -3vw;
 }
 
