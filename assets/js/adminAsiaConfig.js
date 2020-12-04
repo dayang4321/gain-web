@@ -182,7 +182,7 @@ var chart = Highcharts.mapChart("container", {
                 ><span class="sr-only">Close</span>
                 </button>
                     <h1 class="country-title">${this.name}</h1>
-                    <input class="pop-search" type="text" />
+                  
                     <div class="pop-scrollable admin">
                         <div class="pop-info">
                             <img class="pop-svg" src='../../../assets/img/svg/popImg1.svg' />

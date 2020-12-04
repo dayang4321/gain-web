@@ -26,7 +26,7 @@
 .map-link {
     background-color: var(--primary-color);
    min-width: 20.98vw;
-   min-height: 37.32vh;
+   min-height:min(37.32vh,300px);
    display: flex;
    flex-direction: column;
    justify-content: space-between;
