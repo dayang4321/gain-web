@@ -167,22 +167,27 @@ var chart = Highcharts.mapChart("container", {
                     <div class="pop-scrollable">
                       <img class="pop-img" src='../../assets/img/popImg.jpg' />
                       <div class="pop-box">
+                       <h6 class="pop-info-title">Fortification</h6>
                         <p>Baby food, Puree, Formula and Milk</p>
                         <p>Lagos</p>
                       </div>
                       <div class="pop-box">
+                      <h6 class="pop-info-title">Fortification</h6>
                         <p>Baby food, Puree, Formula and Milk</p>
                         <p>Lagos</p>
                       </div>
                       <div class="pop-box">
+                      <h6 class="pop-info-title">Fortification</h6>
                         <p>Baby food, Puree, Formula and Milk</p>
                         <p>Lagos</p>
                       </div>
                       <div class="pop-box">
+                      <h6 class="pop-info-title">Fortification</h6>
                         <p>Baby food, Puree, Formula and Milk</p>
                         <p>Lagos</p>
                       </div>
                       <div class="pop-box">
+                      <h6 class="pop-info-title">Fortification</h6>
                         <p>Baby food, Puree, Formula and Milk</p>
                         <p>Lagos</p>
                       </div>

@@ -284,7 +284,8 @@ input.pop-search:focus{
     justify-content: space-between;
     align-items: baseline;   
     font-weight: bold;  
-    margin-bottom: 0.5vh;
+    margin-bottom: 0.8vh;
+    font-size: var(--body-text);
 }
 
 .pop-info-title span:first-of-type{

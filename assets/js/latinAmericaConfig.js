@@ -113,40 +113,45 @@ var chart = Highcharts.mapChart("container", {
             country = this.name;
             console.log(country);
             instance.forEach((ins) =>
-              ins.setContent(
-                `<div class="popover-content">
-                <button type="button" class="close">
-                <span aria-hidden="true">&times;</span
-                ><span class="sr-only">Close</span>
-                </button>
-                    <h1 class="country-title">${this.name}</h1>
-                    <a href="../../assistance" class="pop-btn">REQUEST ASSISTANCE</a>
-                    <div class="pop-scrollable">
-                      <img class="pop-img" src='../../assets/img/popImg.jpg' />
-                      <div class="pop-box">
-                        <p>Baby food, Puree, Formula and Milk</p>
-                        <p>Lagos</p>
-                      </div>
-                      <div class="pop-box">
-                        <p>Baby food, Puree, Formula and Milk</p>
-                        <p>Lagos</p>
-                      </div>
-                      <div class="pop-box">
-                        <p>Baby food, Puree, Formula and Milk</p>
-                        <p>Lagos</p>
-                      </div>
-                      <div class="pop-box">
-                        <p>Baby food, Puree, Formula and Milk</p>
-                        <p>Lagos</p>
-                      </div>
-                      <div class="pop-box">
-                        <p>Baby food, Puree, Formula and Milk</p>
-                        <p>Lagos</p>
-                      </div>
+            ins.setContent(
+              `<div class="popover-content">
+              <button type="button" class="close">
+              <span aria-hidden="true">&times;</span
+              ><span class="sr-only">Close</span>
+              </button>
+                  <h1 class="country-title">${this.name}</h1>
+                  <a href="../../assistance" class="pop-btn">REQUEST ASSISTANCE</a>
+                  <div class="pop-scrollable">
+                    <img class="pop-img" src='../../assets/img/popImg.jpg' />
+                    <div class="pop-box">
+                     <h6 class="pop-info-title">Fortification</h6>
+                      <p>Baby food, Puree, Formula and Milk</p>
+                      <p>Lagos</p>
                     </div>
-                    <div class="pop-footer">Scroll to see more</div>
-                                          </div>`
-              )
+                    <div class="pop-box">
+                    <h6 class="pop-info-title">Fortification</h6>
+                      <p>Baby food, Puree, Formula and Milk</p>
+                      <p>Lagos</p>
+                    </div>
+                    <div class="pop-box">
+                    <h6 class="pop-info-title">Fortification</h6>
+                      <p>Baby food, Puree, Formula and Milk</p>
+                      <p>Lagos</p>
+                    </div>
+                    <div class="pop-box">
+                    <h6 class="pop-info-title">Fortification</h6>
+                      <p>Baby food, Puree, Formula and Milk</p>
+                      <p>Lagos</p>
+                    </div>
+                    <div class="pop-box">
+                    <h6 class="pop-info-title">Fortification</h6>
+                      <p>Baby food, Puree, Formula and Milk</p>
+                      <p>Lagos</p>
+                    </div>
+                  </div>
+                  <div class="pop-footer">Scroll to see more</div>
+                                        </div>`
+            )
             );
 
             $('.popover-content .close').click(function(){
